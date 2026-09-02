@@ -1,5 +1,6 @@
-//WID(1/9/2026)(Sarthak Mittal)(DegamieSign)(GameView Model(layer)(varibles and param constructor)
+//WID(2/9/2026)(Sarthak Mittal)(DegamieSign)(GameView Model(layer)(varibles and param constructor)#1
 public class GameView extends SurfaceView implements SurfaceHolders.CallBack{
+    public int score=0;
     public GameThread gameThread;
     public Paint gamepaint;
 
