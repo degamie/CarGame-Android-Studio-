@@ -1,6 +1,7 @@
-//WID(2/9/2026)(Sarthak Mittal)(DegamieSign)(GameView)#impl
+//WID(3/9/2026)(Sarthak Mittal)(DegamieSign)(GameView)#impl.1
 package com.example.cargame.View;
 
+import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
@@ -8,6 +9,10 @@ import android.view.SurfaceView;
 
 import com.example.cargame.View.GameThread;
 import com.example.cargame.View.Rectf;
+
+import java.util.ArrayList;
+import java.util.Random;
+
 public class GameView extends SurfaceView implements SurfaceHolders.CallBack{
     public int score=0;
     public GameThread gameThread;
@@ -92,6 +97,19 @@ public class GameView extends SurfaceView implements SurfaceHolders.CallBack{
     }
     public void pause(){
         gameThread.setRunning(false);
+    }
+    
+    @Override
+    public GameView(Context context){
+        super(context);
+        getHolder().addCallback(this);
+        thread = new GameThread(getHolder(), this);
+        setFocusable(true);
+        gamepaint = new Paint();
+        gameRandom = new Random();
+        enemyCars = new ArrayList<>();
+        enemyLanes = new ArrayList<>();
+        stripeYPositions = new ArrayList<>();
     }
     public GameView(GameThread gameThread, Paint gamepaint, int screeenWidth, int screeenheight, boolean gameOver, int score, float gameSpeed, float touchStartX, Rectf playerCar, float carlane, float carwidth, float carheight) {
         super();
