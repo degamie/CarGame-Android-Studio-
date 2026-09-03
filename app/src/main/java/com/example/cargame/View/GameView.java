@@ -1,5 +1,7 @@
-//WID(3/9/2026)(Sarthak Mittal)(DegamieSign)(GameView)#impl.1
+//WID(3/9/2026)(Sarthak Mittal)(DegamieSign)(GameView)#impl.1.1
 package com.example.cargame.View;
+
+import android.view.SurfaceHolder;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -29,6 +31,12 @@ public class GameView extends SurfaceView implements SurfaceHolders.CallBack{
     public Rectf playerCar;
     public float carlane=1;
     public float carwidth,carheight;
+    @Override
+    public void surfaceCreated(SurfaceHolder holder) {
+        screeenheight=getHeight();
+        screeenWidth=getWidth();
+    }
+
     @Override
     public void draw(Canvas canvas) {
         super.draw(canvas);
