@@ -3,9 +3,11 @@ package com.example.cargame;
 import android.view.WindowInsets;
 import android.view.WindowInsetsController;
 
+import com.example.cargame.View.GameView;
 import com.google.androidgamesdk.GameActivity;
 
 public class MainActivity extends GameActivity {
+    public GameView gameView;
     static {
         System.loadLibrary("cargame");
     }
