@@ -1,6 +1,7 @@
-//WID(4/9/2026)(Sarthak Mittal)(DegamieSign)(GameView)#impl.1.1.1
+//WID(4/9/2026)(Sarthak Mittal)(DegamieSign)(GameView)#impl.1.1.1.1
 package com.example.cargame.View;
 
+import android.graphics.RectF;
 import android.view.SurfaceHolder;
 
 import android.content.Context;
@@ -22,7 +23,7 @@ public class GameView extends SurfaceView implements SurfaceHolders.CallBack{
 
     public int screeenWidth,screeenheight;
     // Game state
-    private boolean gameOver = false;
+//    private boolean gameOver = false;
     private int score = 0;
     private float gameSpeed = 12f;
 
@@ -31,13 +32,57 @@ public class GameView extends SurfaceView implements SurfaceHolders.CallBack{
     public Rectf playerCar;
     public float carlane=1;
     public float carwidth,carheight;
+    public  boolean gameOver = false;
+    // Road stripes (for scrolling effect)
+    private ArrayList<Float> stripeYPositions;
+    // Enemy cars
+    private ArrayList<RectF> enemyCars;
+    private ArrayList<Integer> enemyLanes;
+    private Random random;
+    private long lastSpawnTime;
+    private long spawnInterval = 1400; // ms
+
+    private float stripeSpeed = 12f;
+
     @Override
-//    public void surfaceCreated(SurfaceHolder holder) {
-        screeenheight=getHeight();
-        screeenWidth=getWidth();
+    public void surfaceCreated(SurfaceHolder holder) {
+        screeenheight = getHeight();
+        screeenWidth = getWidth();
         initGameObjects();
     }
 
+    public void update(){
+
+    if(gameOver)return;
+        // Scroll road stripes
+        for (int i = 0; i < stripeYPositions.size(); i++) {
+            float y = stripeYPositions.get(i) + stripeSpeed;
+            if (y > screeenheight) y -= screeenheight;
+            stripeYPositions.set(i, y);
+        }
+        if (now - lastSpawnTime > spawnInterval) {
+            spawnEnemy();
+            lastSpawnTime = now;
+            // Gradually increase difficulty
+            if (spawnInterval > 500) spawnInterval -= 15;
+        }
+
+        // Move enemies
+        for (int i = enemyCars.size() - 1; i >= 0; i--) {
+            RectF enemy = enemyCars.get(i);
+            enemy.top += gameSpeed;
+            enemy.bottom += gameSpeed;
+
+            if (enemy.top > screeenheight) {
+                enemyCars.remove(i);
+                enemyLanes.remove(i);
+                score++;
+                if (gameSpeed < 30) gameSpeed += 0.15f;
+            } else if (RectF.intersects(enemy, playerCar)) {
+                gameOver = true;
+            }
+        }
+}
     @Override
     public void draw(Canvas canvas) {
         super.draw(canvas);
