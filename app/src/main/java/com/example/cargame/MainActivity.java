@@ -1,3 +1,4 @@
+//2I(5/9/2026)(Sarthak Mittal)(DegamieSign)(MainActivity)#impl.1.1.1.1.1
 package com.example.cargame;
 
 import android.view.WindowInsets;
@@ -7,6 +8,9 @@ import com.example.cargame.View.GameView;
 import com.google.androidgamesdk.GameActivity;
 
 public class MainActivity extends GameActivity {
+    MainActivity(GameView gameView){
+        this.gameView=gameView;
+    }
     public GameView gameView;
     static {
         System.loadLibrary("cargame");
