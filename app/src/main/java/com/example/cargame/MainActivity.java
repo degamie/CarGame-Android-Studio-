@@ -1,6 +1,7 @@
-//2I(5/9/2026)(Sarthak Mittal)(DegamieSign)(MainActivity)#impl.1.1.1.1.1
+//(7/9/2026)(Sarthak Mittal)(DegamieSign)(MainActivity)#impl.1.1.1.1.1.1
 package com.example.cargame;
 
+import android.os.Bundle;
 import android.view.WindowInsets;
 import android.view.WindowInsetsController;
 
@@ -15,7 +16,22 @@ public class MainActivity extends GameActivity {
     static {
         System.loadLibrary("cargame");
     }
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        gameView = new GameView(this);
+        setContentView(gameView);
+    }
 
+    protected void onPause() {
+        super.onPause();
+        gameView.pause();
+    }
+
+    protected void onResume() {
+        super.onResume();
+        gameView.resume();
+    }
     @Override
     public void onWindowFocusChanged(boolean hasFocus) {
         super.onWindowFocusChanged(hasFocus);
