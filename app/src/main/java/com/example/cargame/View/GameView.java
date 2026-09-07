@@ -1,4 +1,4 @@
-//WID(5/9/2026)(Sarthak Mittal)(DegamieSign)(GameView)#impl.1.1.1.1.1
+//WID(7/9/2026)(Sarthak Mittal)(DegamieSign)(GameView)#impl.1.1.1.1.1/1
 package com.example.cargame.View;
 
 import android.graphics.RectF;
@@ -46,6 +46,9 @@ public class GameView extends SurfaceView implements SurfaceHolders.CallBack{
     private long spawnInterval = 1400; // ms
 
     private float stripeSpeed = 12f;
+    void setsstripespeed(float stripeSpeed){
+        this.stripeSpeed=stripeSpeed;
+    }
 
     @Override
     public void surfaceCreated(SurfaceHolder holder) {
