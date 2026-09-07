@@ -1,7 +1,10 @@
-//WID(7/9/2026)(Sarthak Mittal)(DegamieSign)(GameThread)#impl.1.1.1.1.1
+//WID(7/9/2026)(Sarthak Mittal)(DegamieSign)(GameThread)#impl.1.1.1.1.1.1
 package com.example.cargame.View;
 
 public class GameThread {
+    void setgameview(GameView gameView){
+        this.gameView=gameView;
+    }
     void setMAX_FPS(int  MAX_FPS){
         this.MAX_FPS=MAX_FPS;
     }
