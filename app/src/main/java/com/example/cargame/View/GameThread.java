@@ -1,4 +1,4 @@
-//WID(8/9/2026)(Sarthak Mittal)(DegamieSign)(GameThread)#impl.1.1.1.1.1.1
+//WID(8/9/2026)(Sarthak Mittal)(DegamieSign)(GameThread)#impl.1.1.1.1.1.1.1
 package com.example.cargame.View;
 
 public class GameThread {
@@ -24,7 +24,25 @@ public class GameThread {
         while(running){
             long startTime=System.currentTimeMillis();
             Canvas canvas=null;
+            try{
+                canvas=surfaceHolders.lockedCanvas();
+                synchronized (surfaceHolders){
+                    gameView.update();
+                    gameView.draw();
+
+                }
+            }
+        } finally {
+            if (canvas != null) {
+                try {
+                    surfaceHolder.unlockCanvasAndPost(canvas);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
         }
+
+
     }
 
 }
