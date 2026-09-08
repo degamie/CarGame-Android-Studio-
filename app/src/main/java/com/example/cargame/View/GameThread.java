@@ -1,4 +1,4 @@
-//WID(7/9/2026)(Sarthak Mittal)(DegamieSign)(GameThread)#impl.1.1.1.1.1.1
+//WID(8/9/2026)(Sarthak Mittal)(DegamieSign)(GameThread)#impl.1.1.1.1.1.1
 package com.example.cargame.View;
 
 public class GameThread {
@@ -21,6 +21,10 @@ public class GameThread {
     @Override
     public void run(){
         long targetTime = 1000/MAX_FPS;
+        while(running){
+            long startTime=System.currentTimeMillis();
+            Canvas canvas=null;
+        }
     }
 
 }
