@@ -1,7 +1,12 @@
-//WID(8/9/2026)(Sarthak Mittal)(DegamieSign)(GameThread)#impl.1.1.1.1.1.1.1
+//WID(8/9/2026)(Sarthak Mittal)(DegamieSign)(GameThread)#impl.1.1.1.1.1.1.1.1
 package com.example.cargame.View;
 
+import android.graphics.Canvas;
+
 public class GameThread {
+    GameThread(int MAX_FPS){
+        this.MAX_FPS=MAX_FPS;
+    }
     void setgameview(GameView gameView){
         this.gameView=gameView;
     }
@@ -10,9 +15,9 @@ public class GameThread {
     }
     private static int MAX_FPS = 60;
     public GameView gameView;
-    boolean b=false;
-    public void setRunning(boolean b) {
-        this.b = b;
+    boolean running=false;
+    public void setRunning(boolean running) {
+        this.running = running;
     }
 
     public void start() {
@@ -31,9 +36,8 @@ public class GameThread {
                     gameView.draw();
 
                 }
-                catch(Exception e){
-                    e.printStackTrace();
-                }
+            } catch(Exception e){
+                e.printStackTrace();
             }
         } finally {
             if (canvas != null) {
