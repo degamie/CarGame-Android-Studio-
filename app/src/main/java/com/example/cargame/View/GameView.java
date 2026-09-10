@@ -1,4 +1,4 @@
-//WID(7/9/2026)(Sarthak Mittal)(DegamieSign)(GameView)#impl.1.1.1.1.1/1
+//WID(10/9/2026)(Sarthak Mittal)(DegamieSign)(GameView)#impl.1.1.1.1.1/1.11
 package com.example.cargame.View;
 
 import android.graphics.RectF;
@@ -17,6 +17,10 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class GameView extends SurfaceView implements SurfaceHolders.CallBack{
+    void setgamepaint(Paint gamepaint){
+        this.gamepaint=gamepaint;
+    }
+    void setscore(int score){this.score=score;}
     public int score=0;
     public GameThread gameThread;
     public Paint gamepaint;
