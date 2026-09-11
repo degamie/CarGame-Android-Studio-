@@ -1,4 +1,4 @@
-//WID(11/9/2026)(Sarthak Mittal)(DegamieSign)(GameView)#impl.1.1.1.1.1/1.11.1
+//WID(11/9/2026)(Sarthak Mittal)(DegamieSign)(GameView)#impl.1.1.1.1.1/1.11.1.1
 package com.example.cargame.View;
 
 import android.graphics.RectF;
@@ -34,6 +34,7 @@ public class GameView extends SurfaceView implements SurfaceHolders.CallBack{
     private int score = 0;
     private float gameSpeed = 12f;
 
+    void setplayerCar(Rectf playerCar){this.playerCar=playerCar;}
     // Touch handling
     private float touchStartX;
     public Rectf playerCar;
