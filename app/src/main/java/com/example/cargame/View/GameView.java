@@ -17,6 +17,7 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class GameView extends SurfaceView implements SurfaceHolders.CallBack{
+//    void existsBygamepaint(Paint gamePaint)
     void updateBygamePaint(Paint gamepaint){
         getgamepaint(gamepaint)+setgamepaint(gamepaint)+1;
     }

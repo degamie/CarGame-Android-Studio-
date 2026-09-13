@@ -1,10 +1,13 @@
-//WID(11/9/2026)(Sarthak Mittal)(DegamieSign)(Rectf)#impl.1.1.1.1.1.1
+//WID(14/9/2026)(Sarthak Mittal)(DegamieSign)(Rectf)#impl.1.1.1.1.1.1.1
 package com.example.cargame.View;
 
 import android.app.GameManager;
 import android.view.Window;
 
 public class Rectf {
+    Rectf getRectf(Rectf rectf){
+        return rectf;
+    }
     Rectf rectf;
     void updateBygameManager(GameManager gameManager) throws {getGameManager()+setGameManager(gameManager)+1;}
     void setwindow(Window window){this.window=window;}
