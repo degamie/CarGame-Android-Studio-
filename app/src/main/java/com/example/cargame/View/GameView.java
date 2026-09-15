@@ -1,4 +1,4 @@
-//WID(14/9/2026)(Sarthak Mittal)(DegamieSign)(GameView)#impl.1.1.1.1.1/1.11.1.1.1.1
+//WID(15/9/2026)(Sarthak Mittal)(DegamieSign)(GameView)#impl.1.1.1.1.1/1.11.1.1.1.1
 package com.example.cargame.View;
 
 import android.graphics.RectF;
@@ -50,6 +50,9 @@ public class GameView extends SurfaceView implements SurfaceHolders.CallBack{
         return playerCar;
     }
     public float carlane=1;
+    void setCarlane(float carlane){
+        this.carlane=carlane;
+    }
     public float carwidth,carheight;
     public  boolean gameOver = false;
     // Road stripes (for scrolling effect)

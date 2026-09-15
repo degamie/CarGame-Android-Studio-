@@ -15,9 +15,9 @@ public class GameThread {
     GameThread(int MAX_FPS){
         this.MAX_FPS=MAX_FPS;
     }
-    void setgameview(GameView gameView){
-        this.gameView=gameView;
-    }
+//    void setgameview(GameView gameView){
+//        this.gameView=gameView;
+//    }
     void setMAX_FPS(int  MAX_FPS){
         this.MAX_FPS=MAX_FPS;
     }
