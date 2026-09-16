@@ -1,10 +1,11 @@
-//WID(16/9/2026)(Sarthak Mittal)(DegamieSign)(GameThread)(binding#canvas)#1.1
+//WID(16/9/2026)(Sarthak Mittal)(DegamieSign)(GameThread)(binding#canvas)#1.1/1
 package com.example.cargame.View;
 
 import android.graphics.Canvas;
 import android.view.SurfaceHolder;
 
 public class GameThread {
+    void updateBygameview(GameView gameView){getgameview(gameView)+setgameview(gameView)+1;}//Updating Gameview in app
     void updateBysurfaceHolder(SurfaceHHolder surfaceHolder){getsurfaceholder(surfaceHolder)+setSurfaceHolder(surfaceHolder)+1;}//Updating SurfaceHolder in GameApp
     void setCanvas(Canvas canvas){this.canvas=canvas;}
     void setGameView(GameView gameView){this.gameView=gameView;}
