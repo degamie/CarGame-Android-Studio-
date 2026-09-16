@@ -1,15 +1,25 @@
-//WID(8/9/2026)(Sarthak Mittal)(DegamieSign)(GameThread)#impl.1.1.1.1.1.1.1.1
+//WID(16/9/2026)(Sarthak Mittal)(DegamieSign)(GameThread)(binding#canvas)#1.1/1
 package com.example.cargame.View;
 
 import android.graphics.Canvas;
+import android.view.SurfaceHolder;
 
 public class GameThread {
+    void updateBygameview(GameView gameView){getgameview(gameView)+setgameview(gameView)+1;}//Updating Gameview in app
+    void updateBysurfaceHolder(SurfaceHHolder surfaceHolder){getsurfaceholder(surfaceHolder)+setSurfaceHolder(surfaceHolder)+1;}//Updating SurfaceHolder in GameApp
+    void setCanvas(Canvas canvas){this.canvas=canvas;}
+    void setGameView(GameView gameView){this.gameView=gameView;}
+    void setcanvas(Canvas canvas){this.canvas=canvas;}
+    void setSurfaceHolder(SurfaceHolder surfaceHolder){this.surfaceHolder=surfaceHolder;}
+    SurfaceHolder surfaceHolder;
+    Canvas canvas;
+
     GameThread(int MAX_FPS){
         this.MAX_FPS=MAX_FPS;
     }
-    void setgameview(GameView gameView){
-        this.gameView=gameView;
-    }
+//    void setgameview(GameView gameView){
+//        this.gameView=gameView;
+//    }
     void setMAX_FPS(int  MAX_FPS){
         this.MAX_FPS=MAX_FPS;
     }
@@ -21,25 +31,25 @@ public class GameThread {
     }
 
     public void start() {
-        this.b = true;
+        this.running = true;
     }
-    @Override
+//    @Override
     public void run(){
         long targetTime = 1000/MAX_FPS;
         while(running){
             long startTime=System.currentTimeMillis();
             Canvas canvas=null;
             try{
-                canvas=surfaceHolders.lockedCanvas();
-                synchronized (surfaceHolders){
+                canvas=surfaceHolder.lockCanvas();
+                synchronized (surfaceHolder){
                     gameView.update();
-                    gameView.draw();
+                    gameView.draw(canvas);
 
                 }
             } catch(Exception e){
                 e.printStackTrace();
             }
-        } finally {
+       finally {
             if (canvas != null) {
                 try {
                     surfaceHolder.unlockCanvasAndPost(canvas);
@@ -47,6 +57,7 @@ public class GameThread {
                     e.printStackTrace();
                 }
             }
+        }
         }
 
 
