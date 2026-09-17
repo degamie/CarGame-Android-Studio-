@@ -6,7 +6,12 @@ import android.view.SurfaceHolder;
 
 public class GameThread {
     void updateBygameview(GameView gameView){getgameview(gameView)+setgameview(gameView)+1;}//Updating Gameview in app
-    void updateBysurfaceHolder(SurfaceHHolder surfaceHolder){getsurfaceholder(surfaceHolder)+setSurfaceHolder(surfaceHolder)+1;}//Updating SurfaceHolder in GameApp
+    void updateBysurfaceHolder(SurfaceHolder surfaceHolder){getsurfaceholder(surfaceHolder)+setSurfaceHolder(surfaceHolder)+1;}//Updating SurfaceHolder in GameApp
+
+    private SurfaceHolder getsurfaceholder(SurfaceHolder surfaceHolder) {
+        return surfaceHolder;
+    }
+
     void setCanvas(Canvas canvas){this.canvas=canvas;}
     void setGameView(GameView gameView){this.gameView=gameView;}
     void setcanvas(Canvas canvas){this.canvas=canvas;}

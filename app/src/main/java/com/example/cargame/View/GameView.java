@@ -21,6 +21,10 @@ public class GameView extends SurfaceView implements SurfaceHolders.CallBack{
         if(surfaceView.isInTouchMode()==true)getsurfaceview(surfaceView);
         else getsurfaceview(null);
     }
+
+    private void getsurfaceview(SurfaceView surfaceView) {
+    }
+
     void updateBysurfaceView(SurfaceView surfaceView){
         getsurfaceview(surfaceView)+setsurfaceView(surfaceView)+1;
     }
