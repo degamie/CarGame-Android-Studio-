@@ -1,21 +1,42 @@
-//WID(9/9/2026)(Sarthak Mittal)(DegamieSign)(GameThread)(binding#canvas)
+//WID(17/9/2026)(Sarthak Mittal)(DegamieSign)(GameThread)(binding#canvas)#1.1/1.1
 package com.example.cargame.View;
 
 import android.graphics.Canvas;
 import android.view.SurfaceHolder;
 
 public class GameThread {
+    GameThread(int MAX_FPS){
+        this.MAX_FPS=MAX_FPS;
+    }
+    void setgameview(GameView gameView) {
+        this.gameView=gameView;
+    }
+    private  GameView  getgameview(GameView gameView) {
+        return gameView;
+    }
+   // void updateBygameview(GameView gameView){getgameview(gameView)+setgameview(gameView)+1;}//Updating Gameview in app
+
+
+
+ //   void updateBysurfaceHolder(SurfaceHolder surfaceHolder){getsurfaceholder(surfaceHolder)+setSurfaceHolder(surfaceHolder)+1;}//Updating SurfaceHolder in GameApp
+
+    private SurfaceHolder getsurfaceholder(SurfaceHolder surfaceHolder) {
+        return surfaceHolder;
+    }
+
+    void setCanvas(Canvas canvas){this.canvas=canvas;}
+    void setGameView(GameView gameView){this.gameView=gameView;}
     void setcanvas(Canvas canvas){this.canvas=canvas;}
     void setSurfaceHolder(SurfaceHolder surfaceHolder){this.surfaceHolder=surfaceHolder;}
     SurfaceHolder surfaceHolder;
     Canvas canvas;
 
-    GameThread(int MAX_FPS){
-        this.MAX_FPS=MAX_FPS;
-    }
-    void setgameview(GameView gameView){
-        this.gameView=gameView;
-    }
+//    GameThread(SurfaceHolder MAX_FPS){
+//        this.MAX_FPS=MAX_FPS;
+//    }
+//    void setgameview(GameView gameView){
+//        this.gameView=gameView;
+//    }
     void setMAX_FPS(int  MAX_FPS){
         this.MAX_FPS=MAX_FPS;
     }
@@ -58,5 +79,11 @@ public class GameThread {
 
 
     }
+    public boolean isAlive() {
+        return running;
+    }
+    public void join() {
+    }
+
 
 }
