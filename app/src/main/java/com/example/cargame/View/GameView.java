@@ -1,4 +1,4 @@
-//WID(17/9/2026)(Sarthak Mittal)(DegamieSign)(GameView)#imp/1
+//WID(17/9/2026)(Sarthak Mittal)(DegamieSign)(GameView)#imp/1.1
 package com.example.cargame.View;
 
 import android.graphics.RectF;
@@ -17,6 +17,10 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class GameView extends SurfaceView implements SurfaceHolders.CallBack{
+    void existsBysurfaceView(SurfaceView surfaceView){
+        if(surfaceView.isInTouchMode()==true)getsurfaceview(surfaceView);
+        else getsurfaceview(null);
+    }
     void updateBysurfaceView(SurfaceView surfaceView){
         getsurfaceview(surfaceView)+setsurfaceView(surfaceView)+1;
     }
