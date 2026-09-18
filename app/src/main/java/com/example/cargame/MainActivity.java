@@ -10,9 +10,11 @@ import com.google.androidgamesdk.GameActivity;
 
 public class MainActivity extends GameActivity
 {
-    void updateByGameView(GameView gameView){
-        getGameView(gameView)+setGameView(gameView)+1;
-    }
+    private MainActivity mainActivity;
+
+    //    void updateByGameView(GameView gameView){
+//        getGameView(gameView)+setGameView(gameView)+1;
+//    }
     void setmainactivity(MainActivity mainActivity){
     this.mainActivity=mainActivity;
 }

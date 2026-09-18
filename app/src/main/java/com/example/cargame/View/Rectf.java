@@ -2,19 +2,20 @@
 package com.example.cargame.View;
 
 import android.app.GameManager;
+import android.graphics.RectF;
 import android.view.Window;
 
 public class Rectf {
-    void setrectf(RectF rectf){this.rectf=rectf;}
-    void existsByGameManager(GameManager gameManager){
-        if(gameManager.exists())getGameManager(gameManager);
-        else getGameManager(null);
-    }
+    Rectf rectf;
+    void setrectf(Rectf rectf){this.rectf=rectf;}
+//    void existsByGameManager(GameManager gameManager){
+//        if(gameManager.exists())getGameManager(gameManager);
+//        else getGameManager(null);
+//    }
     Rectf getRectf(Rectf rectf){
         return rectf;
     }
-    Rectf rectf;
-    void updateBygameManager(GameManager gameManager) throws {getGameManager()+setGameManager(gameManager)+1;}
+
     void setwindow(Window window){this.window=window;}
     public Window window;
     public GameManager gameManager;
@@ -31,3 +32,5 @@ public class Rectf {
     }
 
 }
+   // void updateBygameManager(GameManager gameManager) throws {getGameManager()+setGameManager(gameManager)+1;}
+
