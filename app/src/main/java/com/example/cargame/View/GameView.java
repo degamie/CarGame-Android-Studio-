@@ -1,4 +1,4 @@
-//WID(19/9/2026)(Sarthak Mittal(DegamieSign)(GameView)(binding Paint)#1
+//WID(19/9/2026)(Sarthak Mittal(DegamieSign)(GameView)(binding Paint)#1/1
 package com.example.cargame.View;
 
 import android.content.Context;
@@ -57,7 +57,9 @@ void setscreenWidth(int screenWidth){
     // ============================================================
 
     private RectF playerCar;
-
+void setPlayerCar(Rectf playerCar){
+    this.playerCar=playerCar;
+}
     private float carWidth;
     private float carHeight;
 
