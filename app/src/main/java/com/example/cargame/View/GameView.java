@@ -1,4 +1,4 @@
-//WID(18/9/2026)(Sarthak Mittal(DegamieSign)(GameView)(binding Paint)
+//WID(19/9/2026)(Sarthak Mittal(DegamieSign)(GameView)(binding Paint)
 package com.example.cargame.View;
 
 import android.content.Context;
@@ -86,6 +86,9 @@ void setscreenWidth(int screenWidth){
     // ============================================================
 
     private float touchStartX;
+    void settouchStartX(float touchStartX){
+        this.touchStartX=touchStartX;
+    }
 
     // ============================================================
     // Constructor
