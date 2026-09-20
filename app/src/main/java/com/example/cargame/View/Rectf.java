@@ -1,11 +1,14 @@
-//WID(19/9/2026)(Sarthak Mittal)(DegamieSign)(Rectf)#impl.1.1.1.1.1.1..11/1.1.1.1
+//WID(20/9/2026)(Sarthak Mittal)(DegamieSign)(Rectf)#impl.1.1.1.1.1.1..11/1.1.1.1.1
 package com.example.cargame.View;
 
 import android.app.GameManager;
 import android.graphics.RectF;
 import android.view.Window;
 
-public class Rectf extends MainApplication {
+import com.example.cargame.MainActivity;
+
+public class Rectf extends MainActivity {
+    MainActivity mainApplication;
      void updateBygameManager(GameManager gameManager) throws {getGameManager(gameManager)+setGameManager(gameManager)+1;}
     void updateByrectf(Rectf rectf){getRectf(rectf)+setrectf(rectf)+1;}//updating rectf in Gameapp
     Rectf rectf;
