@@ -1,4 +1,4 @@
-//WID(19/9/2026)(Sarthak Mittal(DegamieSign)(GameView)(binding Paint)#1/1
+//WID(20/9/2026)(Sarthak Mittal(DegamieSign)(GameView)(binding Paint)#1/1
 package com.example.cargame.View;
 
 import android.content.Context;
@@ -41,6 +41,9 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback {
     private int screenHeight;
 void setscreenWidth(int screenWidth){
     this.screenwidth=screenWidth;
+}
+void setscreenHeight(int screenHeight){
+    this.screenHeight=screenHeight;
 }
     // ============================================================
     // Road
