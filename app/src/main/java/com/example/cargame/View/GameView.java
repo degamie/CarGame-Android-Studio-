@@ -57,6 +57,9 @@ void setscreenHeight(int screenHeight){
     private float roadLeft;
     private float roadRight;
     private float laneWidth;
+    void setlanewidth(flaot lanewidth){
+        this.laneWidth=laneWidth;
+    }
 void setroadRight(float roadRight){
     this.roadRight=roadRight;
 }
