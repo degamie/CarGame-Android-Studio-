@@ -9,6 +9,9 @@ import com.example.cargame.MainActivity;
 
 public class Rectf extends MainActivity {
     MainActivity mainApplication;
+    void updateBywindow(Window window){
+        getWindow(window)+setwindow(window)+1;
+    }
     void setmainApplication(MainActivity mainApplication){
         this.mainApplication=mainApplication;
     }
@@ -21,6 +24,7 @@ public class Rectf extends MainActivity {
         return rectf;
     }
     Window getWindow(Window window){return window;}
+
     void setwindow(Window window){this.window=window;}
     public Window window;
     public GameManager gameManager;
