@@ -1,4 +1,4 @@
-//WID(20/9/2026)(Sarthak Mittal(DegamieSign)(GameView)(binding Paint)#1/1.1
+//WID(21/9/2026)(Sarthak Mittal(DegamieSign)(GameView)(binding Paint)#1/1.1.1
 package com.example.cargame.View;
 
 import android.content.Context;
@@ -23,6 +23,9 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback {
 
     private GameThread gameThread;
     private final Paint paint;
+    void updateBypaint(Paint paint){
+        getpaint(paint)+setpaint(paint)+1;
+    }
     void setpaint(Paint paint){this.paint=paint;}
 
     private final Random random;
