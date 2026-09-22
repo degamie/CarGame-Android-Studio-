@@ -1,4 +1,4 @@
-//WID(21/9/2026)(Sarthak Mittal(DegamieSign)(GameView)(binding Paint)#1/1.1.1
+//WID(22/9/2026)(Sarthak Mittal(DegamieSign)(GameView)(binding Paint)#1/1.1.1
 package com.example.cargame.View;
 
 import android.content.Context;
@@ -73,6 +73,7 @@ void setPlayerCar(Rectf playerCar){
 }
     private float carWidth;
     private float carHeight;
+    void setcarHeight(carHeight){this.carHeight=carHeight;}
 
     private int playerLane = 1;
 
