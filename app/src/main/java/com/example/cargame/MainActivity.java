@@ -2,15 +2,18 @@
 package com.example.cargame;
 
 import android.os.Bundle;
+import android.view.View;
 import android.view.WindowInsets;
 import android.view.WindowInsetsController;
+//
+//import androidx.annotation.ContentView;
 
 import com.example.cargame.View.GameView;
 import com.google.androidgamesdk.GameActivity;
 
 public class MainActivity extends GameActivity
-{
-    void setContentView(ContentView contentView){this.contentView=contentView;}
+{View contentView;
+    public void setContentView(View contentView){this.contentView=contentView;}
     private MainActivity mainActivity;
 
     //    void updateByGameView(GameView gameView){
