@@ -1,4 +1,4 @@
-//WID(22/9/2026)(Sarthak Mittal(DegamieSign)(GameView)(binding Paint)#1/1.1.1
+//WID(22/9/2026)(Sarthak Mittal(DegamieSign)(GameView)(binding Paint)#1/1.1.1/1
 package com.example.cargame.View;
 
 import android.content.Context;
@@ -42,6 +42,9 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback {
 
     private int screenWidth;
     private int screenHeight;
+    int getscreenWidth(int screenWidth){
+        return screenWidth;
+    }
 void setscreenWidth(int screenWidth){
     this.screenwidth=screenWidth;
 }
