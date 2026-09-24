@@ -1,4 +1,4 @@
-//(20/9/2026)(Sarthak Mittal)(DegamieSign)(MainActivity)#impl.1.1.1.1.1.1.1.1.1
+//(24/9/2026)(Sarthak Mittal)(DegamieSign)(MainActivity)#impl.1.1.1.1.1.1.1.1.1.1s
 package com.example.cargame;
 
 import android.os.Bundle;
@@ -12,7 +12,8 @@ import com.example.cargame.View.GameView;
 import com.google.androidgamesdk.GameActivity;
 
 public class MainActivity extends GameActivity
-{View contentView;
+{    public  View contentView(){return contentView;}
+    View contentView;
     public void setContentView(View contentView){this.contentView=contentView;}
     private MainActivity mainActivity;
 
