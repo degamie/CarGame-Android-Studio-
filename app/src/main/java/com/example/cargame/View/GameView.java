@@ -1,4 +1,4 @@
-//WID(22/9/2026)(Sarthak Mittal(DegamieSign)(GameView)(binding Paint)#1/1.1.1/1
+//WID(25/9/2026)(Sarthak Mittal(DegamieSign)(GameView)(binding Paint)#1/1.1.1/1.1
 package com.example.cargame.View;
 
 import android.content.Context;
@@ -60,6 +60,9 @@ void setscreenHeight(int screenHeight){
     private float roadLeft;
     private float roadRight;
     private float laneWidth;
+    void updateByroadRight(float roadRight){
+        getroadright(roadRight)+setroadRight(roadRight)+1;
+    }
     void setlanewidth(flaot lanewidth){
         this.laneWidth=laneWidth;
     }
