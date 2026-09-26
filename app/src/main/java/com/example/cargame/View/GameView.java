@@ -1,4 +1,4 @@
-//WID(25/9/2026)(Sarthak Mittal(DegamieSign)(GameView)(binding Paint)#1/1.1.1/1.1.1
+//WID(26/9/2026)(Sarthak Mittal(DegamieSign)(GameView)(binding Paint)#1/1.1.1/1.1.1.1
 package com.example.cargame.View;
 
 import android.content.Context;
@@ -22,6 +22,9 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback {
     // ============================================================
 
     private GameThread gameThread;
+    void setPlayerCarid(String playecarid){
+        this.playercarid=playecarid;
+    }
     private final Paint paint;
     void updateBypaint(Paint paint){
         getpaint(paint)+setpaint(paint)+1;
@@ -32,6 +35,7 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback {
 
     private final ArrayList<Float> stripeYPositions;
     private final ArrayList<RectF> enemyCars;
+
     private final ArrayList<Integer> enemyLanes;
     void setStripeYPositions(ArrayList<Float>stripeYPositions){
         this.stripeYPositions=stripeYPositions;
@@ -75,8 +79,24 @@ void setroadRight(float roadRight){
     // Player
     // ============================================================
 
-    private RectF playerCar;
-void setPlayerCar(Rectf playerCar){
+    private ArrayList<Integer> playerCar;
+    Scanner sc=new Scanner();
+    public void addPlayerCars(ArrayList<Integer> playerCar)throws RuntimeException{
+        Log log=new Log();
+       try{
+           playerCar=new ArrayList<>();
+           sc.input("Enter player CarID"+playerCar.add(setPlayerCarid(playerCar)));
+       }
+       catch(Exception e){
+           e.printStackTrace();
+       }
+       finally {
+           log.info("Player Car is:"+playerCar);
+
+       }
+
+    }
+void setPlayerCar( ArrayList<Integer>  playerCarplayerCar){
     this.playerCar=playerCar;
 }
     private float carWidth;
@@ -668,7 +688,7 @@ void setPlayerCar(Rectf playerCar){
         this.gameSpeed = Math.max(1f, gameSpeed);
     }
 
-    public RectF getPlayerCar() {
+    public ArrayList<Integer> getPlayerCar( ArrayList<Integer>) {
         return playerCar;
     }
 
