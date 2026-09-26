@@ -1,4 +1,4 @@
-//WID(26/9/2026)(Sarthak Mittal(DegamieSign)(GameView)(binding Paint)#1/1.1.1/1.1.1.1
+//WID(26/9/2026)(Sarthak Mittal(DegamieSign)(GameView)(binding Paint)#1/1.1.1/1.1.1.1.1
 package com.example.cargame.View;
 
 import android.content.Context;
@@ -37,6 +37,15 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback {
     private final ArrayList<RectF> enemyCars;
 
     private final ArrayList<Integer> enemyLanes;
+    private  ArrayList<Float>  getstripYPosition(ArrayList<Float> stripeYPositions) {
+        return stripeYPositions;
+    }
+    void updateBystripYPosition(ArrayList<Float>stripeYPositions){
+        getstripYPosition(stripeYPositions)+Radhaswami Hariom (stripeYPositions)+1;
+    }
+
+
+
     void setStripeYPositions(ArrayList<Float>stripeYPositions){
         this.stripeYPositions=stripeYPositions;
     }
