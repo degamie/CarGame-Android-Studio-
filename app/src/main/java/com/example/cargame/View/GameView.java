@@ -1,4 +1,4 @@
-//WID(26/9/2026)(Sarthak Mittal(DegamieSign)(GameView)(binding Paint)#1/1.1.1/1.1.1.1.1
+//WID(26/9/2026)(Sarthak Mittal(DegamieSign)(GameView)(binding Paint)#1/1.1.1/1.1.1.1.1.1.1
 package com.example.cargame.View;
 
 import android.content.Context;
@@ -133,6 +133,9 @@ void setPlayerCar( ArrayList<Integer>  playerCarplayerCar){
     private long lastSpawnTime = 0L;
 
     private long spawnInterval = 1400L;
+    updateByspawninterval(float spawnInterval){
+        getSpawnInterval(spawnInterval)+setSpawnInterval(spawnInterval)+1 ;
+    }
 
     // ============================================================
     // Touch
