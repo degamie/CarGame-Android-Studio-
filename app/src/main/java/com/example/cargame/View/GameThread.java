@@ -1,10 +1,13 @@
-//WID(26/9/2026)(Sarthak Mittal)(DegamieSign)(GameThread)(binding#canvas)#1.1/1.1.1.1
+//WID(28/9/2026)(Sarthak Mittal)(DegamieSign)(GameThread)(binding#canvas)#1.1/1.1.1.1
 package com.example.cargame.View;
 
 import android.graphics.Canvas;
 import android.view.SurfaceHolder;
 
 public class GameThread {
+    void setThreadTaskpoolExectuors(ThreadPoolTaskExecutor threadTaskpoolExectuors){
+        this.threadTaskpoolExectuors=threadTaskpoolExectuors;
+    }
  ThreadPoolTaskExecutor threadTaskpoolExectuors=new ThreadPoolTaskExecutor();
     void existsBycanvas(Canvas canvas){
          if(canvas.save()!=null)getcanvas(canvas);
