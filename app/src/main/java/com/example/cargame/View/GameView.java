@@ -88,6 +88,7 @@ void setroadRight(float roadRight){
 
     private ArrayList<Integer> playerCar;
     Scanner sc=new Scanner();
+
     public void addPlayerCars(ArrayList<Integer> playerCar)throws RuntimeException{
         Log log=new Log();
        try{
