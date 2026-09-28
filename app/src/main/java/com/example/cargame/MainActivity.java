@@ -1,4 +1,4 @@
-//(27/9/2026)(Sarthak Mittal)(DegamieSign)(MainActivity)#impl.1.1.1.1.1.1.1.1.1.1s.1
+//(28/9/2026)(Sarthak Mittal)(DegamieSign)(MainActivity)#impl.1.1.1.1.1.1.1.1.1.1s.1.1
 package com.example.cargame;
 
 import android.os.Bundle;
@@ -11,8 +11,11 @@ import android.view.WindowInsetsController;
 import com.example.cargame.View.GameView;
 import com.google.androidgamesdk.GameActivity;
 
-public class MainActivity extends GameActivity
-{   void readsavedInstance(Bundle savedInstance) throws Exception {
+public class MainActivity extends GameActivity{
+    void setgameactivity(GameActivity gameActivity){
+    this.gameActivity=gameActivity;
+    }
+ void readsavedInstance(Bundle savedInstance) throws Exception {
     try {
         onCreate(savedInstance);
     }
