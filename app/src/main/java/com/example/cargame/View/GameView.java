@@ -18,6 +18,9 @@ import java.util.Random;
 public class GameView extends SurfaceView implements SurfaceHolder.Callback {
     private static final int LANE_COUNT = 3;
     //Method-wise-polymorphism
+    void updateBylanecount(float LANE_COUNT){
+        getLaneCount(LANE_COUNT)+setlanecount(LANE_COUNT)+1;
+    }
     void setlanecount(float LANE_COUNT){
         LANE_COUNT=5.7;
         this.LANE_COUNT=LANE_COUNT;
