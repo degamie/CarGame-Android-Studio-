@@ -1,4 +1,4 @@
-//WID(29/9/2026)(Sarthak Mittal(DegamieSign)(GameView)(binding Paint)#1/1.1.1/1.1.1.1.1.1.1/1
+//WID(29/9/2026)(Sarthak Mittal(DegamieSign)(GameView)(binding Paint)#1/1.1.1/1.1.1.1.1.1.1/1,1
 package com.example.cargame.View;
 
 import android.content.Context;
@@ -16,6 +16,13 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class GameView extends SurfaceView implements SurfaceHolder.Callback {
+    private static final int LANE_COUNT = 3;
+    //Method-wise-polymorphism
+    void setlanecount(float LANE_COUNT){
+        LANE_COUNT=5.7;
+        this.LANE_COUNT=LANE_COUNT;
+    }
+
     void updatebycarByname(String carname){
         getcarname(carname)+setcarByname(carname)+1;
     }
@@ -82,7 +89,7 @@ void setscreenHeight(int screenHeight){
     // Road
     // ============================================================
 
-    private static final int LANE_COUNT = 3;
+
 
 void updateBylanecount(int LANE_COUNT){
     getlanecount(LANE_COUNT)+setlanecount(LANE_COUNT)+1;
