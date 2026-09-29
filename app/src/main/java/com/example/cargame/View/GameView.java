@@ -75,6 +75,7 @@ void setscreenHeight(int screenHeight){
     // ============================================================
 
     private static final int LANE_COUNT = 3;
+
 void updateBylanecount(int LANE_COUNT){
     getlanecount(LANE_COUNT)+setlanecount(LANE_COUNT)+1;
 }

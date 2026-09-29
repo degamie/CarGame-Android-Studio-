@@ -1,4 +1,4 @@
-//(28/9/2026)(Sarthak Mittal)(DegamieSign)(MainActivity)#impl.1.1.1.1.1.1.1.1.1.1s.1.1
+//(29/9/2026)(Sarthak Mittal)(DegamieSign)(MainActivity)#impl.1.1.1.1.1.1.1.1.1.1s.1.1.1
 package com.example.cargame;
 
 import android.os.Bundle;
@@ -12,6 +12,10 @@ import com.example.cargame.View.GameView;
 import com.google.androidgamesdk.GameActivity;
 
 public class MainActivity extends GameActivity{
+    void existsBYGameActivity(GameActivity gameActivity){
+        if(gameActivity!=null)getgameActivity(gameActivity);
+        else getgameActivity(null);
+    }
     void setgameactivity(GameActivity gameActivity){
     this.gameActivity=gameActivity;
     }
@@ -23,6 +27,7 @@ public class MainActivity extends GameActivity{
         e.printStackTrace();
     }
 }
+
     public  View contentView(){return contentView;}
     void updateBycontentView(View contentView){
         getcontentView(contentView)+setContentView(contentView)+1;
