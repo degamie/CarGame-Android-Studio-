@@ -1,4 +1,4 @@
-//WID(29/9/2026)(Sarthak Mittal(DegamieSign)(GameView)(binding Paint)#1/1.1.1/1.1.1.1.1.1.1/1,1
+//WID(29/9/2026)(Sarthak Mittal(DegamieSign)(GameView)(binding Paint)#1/1.1.1/1.1.1.1.1.1.1/1,1.1
 package com.example.cargame.View;
 
 import android.content.Context;
@@ -23,6 +23,10 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback {
         this.LANE_COUNT=LANE_COUNT;
     }
 
+    void existsBycarname(String carName){
+        if(carName!=null)getcarname(carName);
+        else getcarname(null);
+    }
     void updatebycarByname(String carname){
         getcarname(carname)+setcarByname(carname)+1;
     }
