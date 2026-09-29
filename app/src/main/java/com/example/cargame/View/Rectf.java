@@ -1,4 +1,4 @@
-//WID(28/9/2026)(Sarthak Mittal)(DegamieSign)(Rectf)#i.1.1
+//WID(29/9/2026)(Sarthak Mittal)(DegamieSign)(Rectf)#i.1.1.2
 package com.example.cargame.View;
 
 import android.app.GameManager;
@@ -8,6 +8,10 @@ import android.view.Window;
 import com.example.cargame.MainActivity;
 
 public class Rectf extends MainActivity {
+    void existsByMainApplication(MainApplication mainApplication){
+        if(mainApplication!=null)getmainapplication(mainApplication);
+        else getmainapplication(null);
+    }
     MainActivity mainApplication;
     private MainActivity getmainapplication(MainActivity mainActivity) {
         return mainActivity;
