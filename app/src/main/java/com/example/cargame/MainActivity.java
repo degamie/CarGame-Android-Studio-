@@ -1,4 +1,4 @@
-//(29/9/2026)(Sarthak Mittal)(DegamieSign)(MainActivity)#impl.1.1.1.1.1.1.1.1.1.1s.1.1.1.1
+//(30/9/2026)(Sarthak Mittal)(DegamieSign)(MainActivity)#impl.1.1.1.1.1.1.1.1.1.1s.1.1.1.1
 package com.example.cargame;
 
 import android.os.Bundle;
@@ -19,9 +19,13 @@ public class MainActivity extends GameActivity{
         if(gameActivity!=null)getgameActivity(gameActivity);
         else getgameActivity(null);
     }
+      void writesavedInstance(Bundle savedInstance){
+        System.out.println(savedInstance);
+      }
     void setgameactivity(GameActivity gameActivity){
     this.gameActivity=gameActivity;
     }
+  
  void readsavedInstance(Bundle savedInstance) throws Exception {
     try {
         onCreate(savedInstance);
