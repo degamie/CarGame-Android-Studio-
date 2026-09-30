@@ -1,4 +1,4 @@
-//WID(29/9/2026)(Sarthak Mittal(DegamieSign)(GameView)(binding Paint)#1/1.1.1/1.1.1.1.1.1.1/1,1.1
+//WID(30/9/2026)(Sarthak Mittal(DegamieSign)(GameView)(binding Paint)#1/1.1.1/1.1.1.1.1.1.1/1,1.1
 package com.example.cargame.View;
 
 import android.content.Context;
@@ -17,6 +17,16 @@ import java.util.Random;
 
 public class GameView extends SurfaceView implements SurfaceHolder.Callback {
     private static final int LANE_COUNT = 3;
+    private float getlanecount(float LANE_COUNT) {
+        return LANE_COUNT;
+    }
+    void existsBylanecont(float LANE_COUNT) {
+        if(LANE_COUNT!=0.0)getlanecount(LANE_COUNT);
+        else getlanecount(0.0);
+    }
+
+
+
     //Method-wise-polymorphism
     void updateBylanecount(float LANE_COUNT){
         getLaneCount(LANE_COUNT)+setlanecount(LANE_COUNT)+1;
