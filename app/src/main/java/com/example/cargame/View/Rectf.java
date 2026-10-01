@@ -1,4 +1,4 @@
-//WID(30/9/2026)(Sarthak Mittal)(DegamieSign)(Rectf)#i.1.1.2.1.1
+//WID(01/10/2026)(Sarthak Mittal)(DegamieSign)(Rectf)#i.1.1.2.1.1
 package com.example.cargame.View;
 
 import android.app.GameManager;
@@ -8,6 +8,18 @@ import android.view.Window;
 import com.example.cargame.MainActivity;
 
 public class Rectf extends MainActivity {
+       Logger logger;
+    void handleGameManager(GameManager gameManager){
+        try{
+            setGameManager(gameManager);
+        }
+        catch(Exception e){
+            e.printStackTrace();
+        }
+        finally{
+         logger.info("GameManager is handled"+gameManager);
+        }
+    }
     void existsByGameManager(GameManager gameManager){
         if(gameManager.exists())getGameManager();
         else getGameManager(null);
