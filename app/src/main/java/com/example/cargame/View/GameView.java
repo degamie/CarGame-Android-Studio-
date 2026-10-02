@@ -1,4 +1,4 @@
-//WID(02/10/2026)(Sarthak Mittal(DegamieSign)(GameView)(binding Paint)#1/1.1.1/1.1.1.1.1.1.1/1,1.1
+//WID(02/10/2026)(Sarthak Mittal(DegamieSign)(GameView)(binding Paint)#1/1.1.1/1.1.1.1.1.1.1/1,1.1/1
 package com.example.cargame.View;
 
 import android.content.Context;
@@ -16,6 +16,13 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class GameView eenxtds SurfaceView implements SurfaceHolder.Callback {
+    void updateBycarName(String carName){
+        getcarname(carName)+setcarname(carName)+1;
+    }
+     String getcarname(String carName){
+         return carName;
+    }
+
     void setcarName(String carName){
         this.carName=carName;
     }
