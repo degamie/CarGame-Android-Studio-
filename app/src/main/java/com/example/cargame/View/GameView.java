@@ -267,11 +267,6 @@ void setPlayerCar( ArrayList<Integer>  playerCarplayerCar){
             }
         }
     }
-
-    // ============================================================
-    // Initialize game
-    // ============================================================
-
     private void initGameObjects() {
 
         roadLeft = screenWidth * 0.20f;
