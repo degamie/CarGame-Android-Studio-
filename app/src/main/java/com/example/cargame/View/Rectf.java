@@ -1,4 +1,4 @@
-//WID(03/10/2026)(Sarthak Mittal)(DegamieSign)(Rectf)#i.1.1.2.1.1.1
+//WID(04/10/2026)(Sarthak Mittal)(DegamieSign)(Rectf)#i.1.1.2.1.1.1/1
 package com.example.cargame.View;
 
 import android.app.GameManager;
@@ -9,6 +9,9 @@ import com.example.cargame.MainActivity;
 
 public class Rectf extends MainActivity {
        Logger logger;
+       void updateBylogger(Logger logger){
+           getlogger(logger)+setlogger(logger)+1;
+       }
        void setlogger(Logger logger){
            this.logger=logger;
        }
