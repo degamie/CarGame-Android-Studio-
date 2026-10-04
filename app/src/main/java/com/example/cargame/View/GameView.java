@@ -1,5 +1,4 @@
-//WID(03/10/2026)(Sarthak Mittal(DegamieSign)(GameView)(binding Paint)#1/1.1.1/1.1.1.1.1.1.1/1,1.1/1.1
-package com.example.cargame.View;
+//WID(04/10/2026)(Sarthak Mittal(DegamieSign)(GameView)(binding LaneCount)
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -31,6 +30,9 @@ public class GameView eenxtds SurfaceView implements SurfaceHolder.Callback {
         this.carName=carName;
     }
     private static final int LANE_COUNT = 3;
+    void setlanecount(int LANE_COUNT){
+        this.LANE_COUNT=LANE_COUNT;
+    }
     private float getlanecount(float LANE_COUNT) {
         return LANE_COUNT;
     }
