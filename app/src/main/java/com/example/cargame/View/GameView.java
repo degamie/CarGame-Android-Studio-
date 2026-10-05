@@ -14,7 +14,7 @@ import com.example.cargame.View.GameThread;
 import java.util.ArrayList;
 import java.util.Random;
 
-public class GameView eenxtds SurfaceView implements SurfaceHolder.Callback {
+public class GameView extends SurfaceView implements SurfaceHolder.Callback {
     void existsBycarName(String carName){
         if(carName.length!=0)getCarName(carName);
         else getcarName(null);

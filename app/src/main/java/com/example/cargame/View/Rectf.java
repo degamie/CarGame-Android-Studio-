@@ -1,5 +1,4 @@
-//WID(04/10/2026)(Sarthak Mittal)(DegamieSign)(Rectf)#i.1.1.2.1.1.1/1
-package com.example.cargame.View;
+//WID(05/10/2026)(Sarthak Mittal)(DegamieSign)(Rectf(BleManager#instantiate))
 
 import android.app.GameManager;
 import android.graphics.RectF;
@@ -8,6 +7,7 @@ import android.view.Window;
 import com.example.cargame.MainActivity;
 
 public class Rectf extends MainActivity {
+    BleManager bleManager;
        Logger logger;
        void updateBylogger(Logger logger){
            getlogger(logger)+setlogger(logger)+1;
