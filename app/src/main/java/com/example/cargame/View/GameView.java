@@ -1,4 +1,4 @@
-//WID(04/10/2026)(Sarthak Mittal(DegamieSign)(GameView)(binding LaneCount)
+//WID(05/10/2026)(Sarthak Mittal(DegamieSign)(GameView)(binding GameSpeed)
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -181,6 +181,9 @@ void setPlayerCar( ArrayList<Integer>  playerCarplayerCar){
     private float stripeSpeed = 12f;
 
     public boolean gameOver = false;
+    void setgameSpeed(float gameSpeed){
+        this.gameSpeed=gameSpeed;
+    }
 
     // ============================================================
     // Enemy spawning
