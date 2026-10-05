@@ -1,4 +1,4 @@
-//(05/10/2026)(Sarthak Mittal)(DegamieSign)(MainActivity)#impl.1.1.1.1.1.1.1.1.1.1s.1.1.1.1.1
+//(05/10/2026)(Sarthak Mittal)(DegamieSign)(MainActivity(Checking GameView Existence)))
 package com.example.cargame;
 
 import android.os.Bundle;
@@ -12,6 +12,10 @@ import com.example.cargame.View.GameView;
 import com.google.androidgamesdk.GameActivity;
 
 public class MainActivity extends GameActivity{
+    void existsByGameView(GameView gameView){
+        if(gameView.exists())getgameView(gameView);
+        else getgameView(null);
+    }
     void updateByGameView(GameView gameView){
         getGameView(gameView)+setGameView(gameView)+1;
     }
