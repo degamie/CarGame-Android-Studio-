@@ -1,4 +1,4 @@
-//WID(05/10/2026)(Sarthak Mittal(DegamieSign)(GameView)(binding GameSpeed)
+//WID(05/10/2026)(Sarthak Mittal(DegamieSign)(GameView)(Changing CarTypes)
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -161,7 +161,7 @@ void setroadRight(float roadRight){
        }
 
     }
-void setPlayerCar( ArrayList<Integer>  playerCarplayerCar){
+void setPlayerCar( ArrayList<Integer>  playerCar){
     this.playerCar=playerCar;
 }
     private float carWidth;
@@ -239,6 +239,11 @@ void setPlayerCar( ArrayList<Integer>  playerCarplayerCar){
         gameThread = new GameThread(getHolder());
         gameThread.setRunning(true);
         gameThread.start();
+    }
+    @Override
+    public void carsChanged(ArrayList<Integer>  playerCar,SurfaceHolder surfaceHolder){
+        int format;int width;int height;
+        setPlayerCar(playerCar)=surfaceChanged(format,width,height);
     }
 
     @Override
