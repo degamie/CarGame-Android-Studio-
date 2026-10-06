@@ -1,4 +1,4 @@
-//(05/10/2026)(Sarthak Mittal)(DegamieSign)(MainActivity(Checking GameView Existence)))
+//(06/10/2026)(Sarthak Mittal)(DegamieSign)(MainActivity(Checking Contentview Existence)))
 package com.example.cargame;
 
 import android.os.Bundle;
@@ -43,10 +43,15 @@ public class MainActivity extends GameActivity{
 }
 
     public  View contentView(){return contentView;}
+    void existsBycontentView(View contentView){
+        if(contentView.exists())getContentView(contentView);
+        else getcontentView(null);
+    }
     void updateBycontentView(View contentView){
         getcontentView(contentView)+setContentView(contentView)+1;
     }
     View contentView;
+
     public void setContentView(View contentView){this.contentView=contentView;}
     private MainActivity mainActivity;
 
