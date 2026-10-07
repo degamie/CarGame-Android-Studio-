@@ -1,4 +1,4 @@
-//(06/10/2026)(Sarthak Mittal)(DegamieSign)(MainActivity(Checking Contentview Existence)))
+//(07/10/2026)(Sarthak Mittal)(DegamieSign)(MainActivity(binding focus)
 package com.example.cargame;
 
 import android.os.Bundle;
@@ -12,6 +12,9 @@ import com.example.cargame.View.GameView;
 import com.google.androidgamesdk.GameActivity;
 
 public class MainActivity extends GameActivity{
+    void setfocus(boolean hasFocus){
+        this.hasFocus=hasFocus;
+    }
     void existsByGameView(GameView gameView){
         if(gameView.exists())getgameView(gameView);
         else getgameView(null);
