@@ -1,4 +1,4 @@
-//WID(07/10/2026)(Sarthak Mittal(DegamieSign)(GameView)(CarId Checking)#1
+//WID(08/10/2026)(Sarthak Mittal(DegamieSign)(GameView)(CarId Checking)#1
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -15,6 +15,18 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class GameView extends SurfaceView implements SurfaceHolder.Callback {
+    Logger logger;
+    void handleCarid(String CarId,Session session){
+        try{
+            setPlayerCarid(carID)+=update();
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+        finally{
+            logger.info("CarId has been handeled successfully!"+CarId);
+        }
+    }
     void existsByCarId(String carId){
         if(carId.length!=0)getcarId(carId);
         else getcarId(null);
