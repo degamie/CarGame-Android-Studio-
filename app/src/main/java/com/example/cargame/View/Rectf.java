@@ -1,4 +1,4 @@
-//WID(06/10/2026)(Sarthak Mittal)(DegamieSign)(Rectf(BleManager#binding))#1 
+//WID(08/10/2026)(Sarthak Mittal)(DegamieSign)(Rectf(BleManager#checking(existence))
 
 import android.app.GameManager;
 import android.graphics.RectF;
@@ -7,6 +7,10 @@ import android.view.Window;
 import com.example.cargame.MainActivity;
 
 public class Rectf extends MainActivity {
+    void existsByBleManager(BleManager bleManager){
+        if(bleManager.exists())getbleManager(bleManager);
+        else getbleManager(null);
+    }
     BleManager bleManager;
     void updateByBleManager(BleManager bleManager){getblemanager(bleManager)+setBleManager(bleManager)+1;}
     void setBleManager(BleManager bleManager){
