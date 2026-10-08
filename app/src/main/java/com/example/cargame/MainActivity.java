@@ -1,4 +1,4 @@
-//(07/10/2026)(Sarthak Mittal)(DegamieSign)(MainActivity(Updating#focus))
+//(08/10/2026)(Sarthak Mittal)(DegamieSign)(MainActivity(Updating#focus))
 package com.example.cargame;
 
 import android.os.Bundle;
@@ -12,6 +12,10 @@ import com.example.cargame.View.GameView;
 import com.google.androidgamesdk.GameActivity;
 
 public class MainActivity extends GameActivity{
+    void existsByfocus(boolean hasFocus){
+        if(hasFocus==true)getfocus(hasFocus);
+        else getfocus(false);
+    }
     void updateByfocus(boolean hasFocus){
         getfocus(hasFocus)+setfocus(hasFocus)+1;
     }
