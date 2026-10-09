@@ -1,4 +1,4 @@
-//(08/10/2026)(Sarthak Mittal)(DegamieSign)(MainActivity(Updating#focus))
+//(09/10/2026)(Sarthak Mittal)(DegamieSign)(MainActivity(contentViewswitch))
 package com.example.cargame;
 
 import android.os.Bundle;
@@ -12,6 +12,22 @@ import com.example.cargame.View.GameView;
 import com.google.androidgamesdk.GameActivity;
 
 public class MainActivity extends GameActivity{
+    Logger logger;
+    void contentViewswitch(View contentView,String gamescenetitle){
+        switch (contentView){
+            case 1{
+                if(gameView=="next scene")setGameView(gameView);
+            }
+            case 2{
+                continue;
+            }
+            default{
+                logger.warn("Content View is yet to be available,pls try again"+ gamescenetitle+ contentView);
+            }
+            setgameactivity(mainActivity);
+        }
+
+    }
     void existsByfocus(boolean hasFocus){
         if(hasFocus==true)getfocus(hasFocus);
         else getfocus(false);
