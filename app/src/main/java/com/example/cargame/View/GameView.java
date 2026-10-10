@@ -1,4 +1,4 @@
-//WID(9/10/2026)(Sarthak Mittal(DegamieSign)(GameView)(Increment CarModels)
+//WID(10/10/2026)(Sarthak Mittal(DegamieSign)(GameView)(Increment CarModels)#1
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -15,6 +15,9 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class GameView extends SurfaceView implements SurfaceHolder.Callback {
+    void updateBymodels(ArrayList<String>playerCar){
+        getPlayerCar(playerCar)+setplayerCar(playerCar)+1;
+    }
     void incrementcarmodels(ArrayList<String> playerCar){
         for(int cnt:playerCar.length){
             if(playerCar>=0)cnt+=getPlayerCar(playerCar);
