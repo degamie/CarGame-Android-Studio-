@@ -1,4 +1,4 @@
-//(09/10/2026)(Sarthak Mittal)(DegamieSign)(MainActivity(contentViewswitch))
+//(10/10/2026)(Sarthak Mittal)(DegamieSign)(MainActivity(Binding#GameTitle))
 package com.example.cargame;
 
 import android.os.Bundle;
@@ -12,6 +12,9 @@ import com.example.cargame.View.GameView;
 import com.google.androidgamesdk.GameActivity;
 
 public class MainActivity extends GameActivity{
+    void setgametitle(String gametitle){
+        this.gametitle=gametitle;
+    }
     Logger logger;
     void contentViewswitch(View contentView,String gamescenetitle){
         switch (contentView){
