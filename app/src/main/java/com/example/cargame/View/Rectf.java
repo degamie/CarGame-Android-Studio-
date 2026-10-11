@@ -1,4 +1,4 @@
-//WID(10/10/2026)(Sarthak Mittal)(DegamieSign)(Rectf(BleManager#checking(existence))#1
+//WID(11/10/2026)(Sarthak Mittal)(DegamieSign)(Rectf(BleManager#checking(existence))#1/1
 
 import android.app.GameManager;
 import android.graphics.RectF;
@@ -7,6 +7,10 @@ import android.view.Window;
 import com.example.cargame.MainActivity;
 
 public class Rectf extends MainActivity {
+    void existsByGameManager(GameManager gameManager){
+        if(gameManager.exists()!=null)getGameManager(gameManager);
+        else getGameManager(null);
+    }
     void existsByGameManager(GameManager gameManager){
         if(gameManager.exists())getGameManager(gameManager);
         else getGameManager(null);

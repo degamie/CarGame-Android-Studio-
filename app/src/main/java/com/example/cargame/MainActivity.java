@@ -1,4 +1,4 @@
-//(10/10/2026)(Sarthak Mittal)(DegamieSign)(MainA#ctivity(UpdatingGameTitle))#1
+//(11/10/2026)(Sarthak Mittal)(DegamieSign)(MainA#ctivity(Checking#GameTitle))#1.1
 package com.example.cargame;
 
 import android.os.Bundle;
@@ -12,6 +12,10 @@ import com.example.cargame.View.GameView;
 import com.google.androidgamesdk.GameActivity;
 
 public class MainActivity extends GameActivity{
+    void existsByGame(String gameTitle){
+        if(gameTitle.length!=0)getByGame(gameTitle);
+        else getBygame(0);
+    }
     void updateByGameTitle(String gameTitle){
         getgameTitle(gameTitle)+setgametitle(gameTitle)+1;
     }
