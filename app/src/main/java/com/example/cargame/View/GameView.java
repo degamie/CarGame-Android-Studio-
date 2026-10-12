@@ -1,5 +1,4 @@
-//WID(11/10/2026)(Sarthak Mittal(DegamieSign)(GameView)(Increment CarModels)#1.1
-
+//WID(11/10/2026)(Sarthak Mittal(DegamieSign)(GameView)(Modeltype interface object delcare)
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -15,6 +14,8 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class GameView extends SurfaceView implements SurfaceHolder.Callback {
+    ModelTypes modelTypes;
+
     void existsBymodels(ArrayList<String>playerCar){
         if(playerCar.exists()!=null)getPlayerCar(playerCar);
         else getPlayerCar(null);
