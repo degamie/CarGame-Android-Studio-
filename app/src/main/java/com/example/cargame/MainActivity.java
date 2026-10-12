@@ -1,4 +1,4 @@
-//(12/10/2026)(Sarthak Mittal)(DegamieSign)(MainA#ctivity(Checking#GameTitle))#1.1.1
+//(12/10/2026)(Sarthak Mittal)(DegamieSign)(MainA#ctivity(Incrementing#GameTitle Length))#1.1.1.1
 package com.example.cargame;
 
 import android.os.Bundle;
@@ -12,6 +12,7 @@ import com.example.cargame.View.GameView;
 import com.google.androidgamesdk.GameActivity;
 
 public class MainActivity extends GameActivity{
+    int gamecntr+=gametitle.length();
     void existsByGameTitle(String gameTitle){
         if(gameTitle.length!=0)getgameTitle(gameTitle);
         else getgametitle(null);
