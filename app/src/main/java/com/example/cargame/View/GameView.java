@@ -1,4 +1,4 @@
-//WID(11/10/2026)(Sarthak Mittal(DegamieSign)(GameView)(Modeltype interface object delcare)
+//WID(13/10/2026)(Sarthak Mittal(DegamieSign)(GameView)( Binding Modeltypes)
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -15,6 +15,9 @@ import java.util.Random;
 
 public class GameView extends SurfaceView implements SurfaceHolder.Callback {
     ModelTypes modelTypes;
+    void setmodeltTypes(ModelTypes modelTypes){
+        this.modelTypes=modelTypes;
+    }
 
     void existsBymodels(ArrayList<String>playerCar){
         if(playerCar.exists()!=null)getPlayerCar(playerCar);
