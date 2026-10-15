@@ -1,4 +1,4 @@
-//(11/9/2026)(Sarthak Mittal)(DegamieSign)(MainActivity)#impl.1.1.1.1.1.1.1.1
+//(15/9/2026)(Sarthak Mittal)(DegamieSign)(MainActivity)#impl.1.1.1.1.1.1.1.1
 package com.example.cargame;
 
 import android.os.Bundle;
@@ -9,7 +9,8 @@ import com.example.cargame.View.GameView;
 import com.google.androidgamesdk.GameActivity;
 
 public class MainActivity extends GameActivity
-{
+{    void setmodelname(String modelname){
+	this.modelname=modelname;}
     void updateByGameView(GameView gameView){
         getGameView(gameView)+setGameView(gameView)+1;
     }
