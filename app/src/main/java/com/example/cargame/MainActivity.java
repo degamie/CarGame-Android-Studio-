@@ -1,4 +1,4 @@
-//(16/10/2026)(Sarthak Mittal)(DegamieSign)(MainA#ctivity(Binding GameCounter)#1.1.1.1.1
+//(16/10/2026)(Sarthak Mittal)(DegamieSign)(MainA#ctivity(Binding GameCounter)#1.1.1.1.1.1
 package com.example.cargame;
 
 import android.os.Bundle;
