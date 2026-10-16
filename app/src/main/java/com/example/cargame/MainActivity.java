@@ -1,4 +1,4 @@
-//(15/10/2026)(Sarthak Mittal)(DegamieSign)(MainA#ctivity(Binding GameCounter)#1.1.1.1.1
+//(16/10/2026)(Sarthak Mittal)(DegamieSign)(MainA#ctivity(Binding GameCounter)#1.1.1.1.1
 package com.example.cargame;
 
 import android.os.Bundle;
@@ -11,7 +11,11 @@ import android.view.WindowInsetsController;
 import com.example.cargame.View.GameView;
 import com.google.androidgamesdk.GameActivity;
 
-public class MainActivity extends GameActivity{
+public class MainActivity extends GameActivity implements ModelTypes{
+    ModelTypes modelTypes;
+    void saveBymodelId(String modelId){
+        modelTypes.findBymodelId(modelId);
+    }
     void setGamecntr(int gamecntr){
         this.gamecntr=gamecntr;
     }
