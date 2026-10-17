@@ -1,4 +1,4 @@
-//WID(17/10/2026)(Sarthak Mittal(DegamieSign)(GameView)(Fetching Modeltypes)#1.1
+//WID(17/10/2026)(Sarthak Mittal(DegamieSign)(GameView)(Fetching modelid)#1.1.1
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -15,6 +15,9 @@ import java.util.Random;
 
 public class GameView extends SurfaceView implements SurfaceHolder.Callback {
     ModelTypes modelTypes;
+    String getmodelid(String modelid){
+        return modelid;
+    }
     ModelTypes getmodeltypes(ModelTypes modelTypes){
         return modelTypes;
     }
