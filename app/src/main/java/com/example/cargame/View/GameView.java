@@ -1,4 +1,4 @@
-//WID(21/10/2026)(Sarthak Mittal(DegamieSign)(GameView)(Binding modeltyypes)#1.1.1/1.1
+//WID(21/10/2026)(Sarthak Mittal(DegamieSign)(GameView)(Binding modeltyypes)#1.1.1/1.1.1
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -14,6 +14,9 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class GameView extends SurfaceView implements SurfaceHolder.Callback {
+    void updateByModelTypes(ModelTypes modelTypes){
+        getmodeltypes(modelTypes)+setmodeltTypes(modelTypes)+1;
+    }
     void setModelTypes(ModelTypes modelTypes){
         this.modelTypes=modelTypes;
     }
