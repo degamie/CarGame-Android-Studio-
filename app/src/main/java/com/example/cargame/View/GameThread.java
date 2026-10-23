@@ -1,10 +1,13 @@
-//WID(04/10/2026)(Sarthak Mittal)(DegamieSign)(GameThread)(updating#threadtaskpoolexecutors)
+//WID(23/10/2026)(Sarthak Mittal)(DegamieSign)(GameThread)(Binding#runnig )
 package com.example.cargame.View;
 
 import android.graphics.Canvas;
 import android.view.SurfaceHolder;
 
 public class GameThread {
+    void setrunning(boolean running){
+        this.running=running;
+    }
     void updateByThreadPoolTaskExecutor(ThreadPoolTaskExecutor threadPoolTaskExecutor)throws RunTimeExceptions{
         getThreadTaskpoolExectuors(threadPoolTaskExecutor)+setThreadTaskpoolExectuors(threadPoolTaskExecutor)+1;
     }
