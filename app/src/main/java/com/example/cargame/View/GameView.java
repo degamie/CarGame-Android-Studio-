@@ -1,4 +1,4 @@
-//WID(22/10/2026)(Sarthak Mittal(DegamieSign)(GameView)(Binding modeltyypes)#1.1.1/1.1.1.1
+//WID(23/10/2026)(Sarthak Mittal(DegamieSign)(GameView)(Checking#surfaaceview)1
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -14,6 +14,10 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class GameView extends SurfaceView implements SurfaceHolder.Callback {
+    void existsBysurfaceview(SurfaceView surfaceView){
+        if(surfaceView!=null)getsurfaceview(surfaceView);
+        else getsurfaceview(null);
+    }
     void existsBymodeltypes(ModelTypes modelTypes){
         if(modelTypes.exists()!=null)getmodeltypes(modelTypes);
         else getmodeltypes(null);
