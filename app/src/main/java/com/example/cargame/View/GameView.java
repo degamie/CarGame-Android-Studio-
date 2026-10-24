@@ -1,4 +1,4 @@
-//WID(23/10/2026)(Sarthak Mittal(DegamieSign)(GameView)(Checking#surfaaceview)1
+//WID(24/10/2026)(Sarthak Mittal(DegamieSign)(GameView)(Increasing#surfaaceview length)
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -14,6 +14,9 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class GameView extends SurfaceView implements SurfaceHolder.Callback {
+    void increasbysurfaceview(SurfaceView surfaceView){
+        surfaceView.length()++;
+    }
     void existsBysurfaceview(SurfaceView surfaceView){
         if(surfaceView!=null)getsurfaceview(surfaceView);
         else getsurfaceview(null);
