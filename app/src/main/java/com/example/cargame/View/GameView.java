@@ -1,4 +1,4 @@
-//WID(25/10/2026)(Sarthak Mittal(DegamieSign)(GameView)(Checking#modeltypes)#Existence
+//WID(26/10/2026)(Sarthak Mittal(DegamieSign)(GameView)(Updating#gametypes)
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -14,7 +14,11 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class GameView extends SurfaceView implements SurfaceHolder.Callback {
-
+    Stream<String> modelStream;
+    MainActivity mainActivity;
+void updatebygametypes(GameLauncher gameLauncher,ModelTypes modelTypes){
+    updateByModelTypes(modelTypes)+=mainActivity.setmodelstream(modelStream);
+}
      void existsBymodelTypes(ModelTypes modelTypes){
          if(modelTypes.length()!=0)getmodeltypes(modelTypes);
          else getmodeltypes(0);
