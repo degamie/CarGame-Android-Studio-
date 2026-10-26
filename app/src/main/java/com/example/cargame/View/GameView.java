@@ -14,6 +14,7 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class GameView extends SurfaceView implements SurfaceHolder.Callback {
+
      void existsBymodelTypes(ModelTypes modelTypes){
          if(modelTypes.length()!=0)getmodeltypes(modelTypes);
          else getmodeltypes(0);

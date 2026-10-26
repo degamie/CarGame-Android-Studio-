@@ -1,4 +1,4 @@
-//(21/10/2026)(Sarthak Mittal)(DegamieSign)(MainA#ctivity(Binding GameCounter)#1.1.1.1.1.1.1
+//(26/10/2026)(Sarthak Mittal)(DegamieSign)(MainA#ctivity(Binding GameCounter)#1.1.1.1.1.1.1
 package com.example.cargame;
 
 import android.os.Bundle;
@@ -17,6 +17,9 @@ public class MainActivity extends GameActivity implements ModelTypes{
     }
     ModelTypes modelTypes;
     Stream<String>modelstream;
+    Stream<String> getModelstream( Stream<String> modelStream){
+            return modelStream;
+    }
     void setmodelstream( Stream<String>modelstream){
         this.modelstream=modelstream;
     }
