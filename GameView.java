@@ -1,4 +1,4 @@
-//WID(26/10/2026)(Sarthak Mittal(DegamieSign)(GameView)(Updating#gametypes)
+//WID(26/10/2026)(Sarthak Mittal(DegamieSign)(GameView)(Binding#modelStream)
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -14,6 +14,9 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class GameView extends SurfaceView implements SurfaceHolder.Callback {
+    void setmodelstream(Stream<String>modelStream){
+        this.modelStream=modelStream;
+    }
     Stream<String> modelStream;
     MainActivity mainActivity;
 void updatebygametypes(GameLauncher gameLauncher,ModelTypes modelTypes){
