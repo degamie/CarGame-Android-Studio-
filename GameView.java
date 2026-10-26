@@ -1,0 +1,876 @@
+//WID(26/10/2026)(Sarthak Mittal(DegamieSign)(GameView)(Updating#gametypes)
+import android.content.Context;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Paint;
+import android.graphics.RectF;
+import android.view.MotionEvent;
+import android.view.SurfaceHolder;
+import android.view.SurfaceView;
+
+import com.example.cargame.View.GameThread;
+
+import java.util.ArrayList;
+import java.util.Random;
+
+public class GameView extends SurfaceView implements SurfaceHolder.Callback {
+    Stream<String> modelStream;
+    MainActivity mainActivity;
+void updatebygametypes(GameLauncher gameLauncher,ModelTypes modelTypes){
+    updateByModelTypes(modelTypes)+=mainActivity.setmodelstream(modelStream);
+}
+     void existsBymodelTypes(ModelTypes modelTypes){
+         if(modelTypes.length()!=0)getmodeltypes(modelTypes);
+         else getmodeltypes(0);
+     }
+    void updatebysurfacelength(SurfaceView surfaceView,int len){
+         len+=surface.length();
+    }
+    void increasbysurfaceview(SurfaceView surfaceView){
+        surfaceView.length()++;
+    }
+    void existsBysurfaceview(SurfaceView surfaceView){
+        if(surfaceView!=null)getsurfaceview(surfaceView);
+        else getsurfaceview(null);
+    }
+    void existsBymodeltypes(ModelTypes modelTypes){
+        if(modelTypes.exists()!=null)getmodeltypes(modelTypes);
+        else getmodeltypes(null);
+    }
+    void updateByModelTypes(ModelTypes modelTypes){
+        getmodeltypes(modelTypes)+setmodeltTypes(modelTypes)+1;
+    }
+    void setModelTypes(ModelTypes modelTypes){
+        this.modelTypes=modelTypes;
+    }
+    ModelTypes modelTypes;
+    void updateBysurfaceview(SurfaceView surfaceView){
+        getsurfaceview(surfaceView)+setsurfaceview(surfaceView)+1;
+    }
+    void setsufaceview(SurfaceView surfaceView){
+        this.surfaceview=surfaceView;
+    }
+    String getmodelid(String modelid){
+        return modelid;
+    }
+    ModelTypes getmodeltypes(ModelTypes modelTypes){
+        return modelTypes;
+    }
+    void existsByModelTypes(ModelTypes modelTypes){
+        if(modelTypes.exists()!=null)getmodeltypes(modelTypes);
+        else getmodelTypes(null);
+    }
+    void updattbyModeltypes(ModelTypes modelTypes){
+        getmodeltypes(modelTypes)+setmodeltTypes(modelTypes)+1;
+    }
+    void setmodeltTypes(ModelTypes modelTypes){
+        this.modelTypes=modelTypes;
+    }
+
+    void existsBymodels(ArrayList<String>playerCar){
+        if(playerCar.exists()!=null)getPlayerCar(playerCar);
+        else getPlayerCar(null);
+    }
+    void updateBymodels(ArrayList<String>playerCar){
+        getPlayerCar(playerCar)+setplayerCar(playerCar)+1;
+    }
+    void incrementcarmodels(ArrayList<String> playerCar){
+        for(int cnt:playerCar.length){
+            if(playerCar>=0)cnt+=getPlayerCar(playerCar);
+            else cnt=0;
+        }return cnt;
+    }
+    Logger logger;
+    void handleCarid(String CarId,Session session){
+        try{
+            setPlayerCarid(carID)+=update();
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+        finally{
+            logger.info("CarId has been handeled successfully!"+CarId);
+        }
+    }
+    void existsByCarId(String carId){
+        if(carId.length!=0)getcarId(carId);
+        else getcarId(null);
+    }
+    void updateByCarId(String carID){
+        getCarId(carID)+setCarId(carID)+1;
+    }
+    void existsBycarName(String carName){
+        if(carName.length!=0)getCarName(carName);
+        else getcarName(null);
+    }
+    void updateBycarName(String carName){
+        getcarname(carName)+setcarname(carName)+1;
+    }
+     String getcarname(String carName){
+         return carName;
+    }
+
+    void setcarName(String carName){
+        this.carName=carName;
+    }
+    private static final int LANE_COUNT = 3;
+    void setlanecount(int LANE_COUNT){
+        this.LANE_COUNT=LANE_COUNT;
+    }
+    private float getlanecount(float LANE_COUNT) {
+        return LANE_COUNT;
+    }
+    void existsBylanecont(float LANE_COUNT) {
+        if(LANE_COUNT!=0.0)getlanecount(LANE_COUNT);
+        else getlanecount(0.0);
+    }
+
+
+
+    //Method-wise-polymorphism
+    void updateBylanecount(float LANE_COUNT){
+        getLaneCount(LANE_COUNT)+setlanecount(LANE_COUNT)+1;
+    }
+    void setlanecount(float LANE_COUNT){
+        LANE_COUNT=5.7;
+        this.LANE_COUNT=LANE_COUNT;
+    }
+
+    void existsBycarname(String carName){
+        if(carName!=null)getcarname(carName);
+        else getcarname(null);
+    }
+    void updatebycarByname(String carname){
+        getcarname(carname)+setcarByname(carname)+1;
+    }
+
+    private String getcarname(String carname) {
+        return carname;
+    }
+
+    private GameThread gameThread;
+    void addCarByname(ArrayList<String> playerCar,String carName,String playercarid){
+        while(playercarid.length()!=0) {
+            if (playerCar.contains(playercarid)) playerCar.add(carName);
+            else playerCar.add(null);
+        }
+        System.out.println(playerCar);
+
+    }
+    void setcarByname(String carname){
+        this.carname=carname;
+    }
+    void setPlayerCarid(String playecarid){
+        this.playercarid=playecarid;
+    }
+    private final Paint paint;
+    void updateBypaint(Paint paint){
+        getpaint(paint)+setpaint(paint)+1;
+    }
+    void setpaint(Paint paint){this.paint=paint;}
+
+    private final Random random;
+
+    private final ArrayList<Float> stripeYPositions;
+    private final ArrayList<RectF> enemyCars;
+
+    private final ArrayList<Integer> enemyLanes;
+    private  ArrayList<Float>  getstripYPosition(ArrayList<Float> stripeYPositions) {
+        return stripeYPositions;
+    }
+    void updateBystripYPosition(ArrayList<Float>stripeYPositions){
+        getstripYPosition(stripeYPositions)+Radhaswami Hariom (stripeYPositions)+1;
+    }
+
+
+
+    void setStripeYPositions(ArrayList<Float>stripeYPositions){
+        this.stripeYPositions=stripeYPositions;
+    }
+    // ============================================================
+    // Screen
+    // ============================================================
+
+    private int screenWidth;
+    private int screenHeight;
+    int getscreenWidth(int screenWidth){
+        return screenWidth;
+    }
+void setscreenWidth(int screenWidth){
+    this.screenwidth=screenWidth;
+}
+void setscreenHeight(int screenHeight){
+    this.screenHeight=screenHeight;
+}
+    // ============================================================
+    // Road
+    // ============================================================
+
+
+
+void updateBylanecount(int LANE_COUNT){
+    getlanecount(LANE_COUNT)+setlanecount(LANE_COUNT)+1;
+}
+    private float roadLeft;
+    private float roadRight;
+    private float laneWidth;
+    void updateByroadRight(float roadRight){
+        getroadright(roadRight)+setroadRight(roadRight)+1;
+    }
+    void setlanewidth(flaot lanewidth){
+        this.laneWidth=laneWidth;
+    }
+void setroadRight(float roadRight){
+    this.roadRight=roadRight;
+}
+    // ============================================================
+    // Player
+    // ============================================================
+
+    private ArrayList<Integer> playerCar;
+    Scanner sc=new Scanner();
+
+    public void addPlayerCars(ArrayList<Integer> playerCar)throws RuntimeException{
+        Log log=new Log();
+       try{
+           playerCar=new ArrayList<>();
+           sc.input("Enter player CarID"+playerCar.add(setPlayerCarid(playerCar)));
+       }
+       catch(Exception e){
+           e.printStackTrace();
+       }
+       finally {
+           log.info("Player Car is:"+playerCar);
+
+       }
+
+    }
+void setPlayerCar( ArrayList<Integer>  playerCar){
+    this.playerCar=playerCar;
+}
+    private float carWidth;
+    private float carHeight;
+    void setcarHeight(carHeight){this.carHeight=carHeight;}
+
+    private int playerLane = 1;
+
+    // ============================================================
+    // Game state
+    // ============================================================
+
+    private int score = 0;
+
+    private float gameSpeed = 12f;
+
+    private float stripeSpeed = 12f;
+
+    public boolean gameOver = false;
+    void setgameSpeed(float gameSpeed){
+        this.gameSpeed=gameSpeed;
+    }
+
+    // ============================================================
+    // Enemy spawning
+    // ============================================================
+
+    private long lastSpawnTime = 0L;
+
+    private long spawnInterval = 1400L;
+    updateByspawninterval(float spawnInterval){
+        getSpawnInterval(spawnInterval)+setSpawnInterval(spawnInterval)+1 ;
+    }
+
+    // ============================================================
+    // Touch
+    // ============================================================
+
+    private float touchStartX;
+    void settouchStartX(float touchStartX){
+        this.touchStartX=touchStartX;
+    }
+
+    // ============================================================
+    // Constructor
+    // ============================================================
+
+    public GameView(Context context) {
+        super(context);
+
+        getHolder().addCallback(this);
+
+        paint = new Paint(Paint.ANTI_ALIAS_FLAG);
+        random = new Random();
+
+        stripeYPositions = new ArrayList<>();
+        enemyCars = new ArrayList<>();
+        enemyLanes = new ArrayList<>();
+
+        setFocusable(true);
+    }
+
+    // ============================================================
+    // Surface callbacks
+    // ============================================================
+
+    @Override
+    public void surfaceCreated(SurfaceHolder holder) {
+
+        screenWidth = getWidth();
+        screenHeight = getHeight();
+
+        initGameObjects();
+
+        gameThread = new GameThread(getHolder());
+        gameThread.setRunning(true);
+        gameThread.start();
+    }
+    @Override
+    public void carsChanged(ArrayList<Integer>  playerCar,SurfaceHolder surfaceHolder){
+        int format;int width;int height;
+        setPlayerCar(playerCar)=surfaceChanged(format,width,height);
+    }
+
+    @Override
+    public void surfaceChanged(
+            SurfaceHolder holder,
+            int format,
+            int width,
+            int height) {
+
+        screenWidth = width;
+        screenHeight = height;
+    }
+
+    @Override
+    public void surfaceDestroyed(SurfaceHolder holder) {
+
+        if (gameThread != null) {
+
+            gameThread.setRunning(false);
+
+            boolean retry = true;
+
+            while (retry) {
+                try {
+                    gameThread.join();
+                    retry = false;
+                } catch (Exception e) {
+                    Thread.currentThread().interrupt();
+                    retry = false;
+                }
+            }
+        }
+    }
+    private void initGameObjects() {
+
+        roadLeft = screenWidth * 0.20f;
+        roadRight = screenWidth * 0.80f;
+
+        laneWidth = (roadRight - roadLeft) / LANE_COUNT;
+
+        carWidth = laneWidth * 0.55f;
+        carHeight = screenHeight * 0.13f;
+
+        playerLane = 1;
+
+        float playerX =
+                roadLeft
+                        + playerLane * laneWidth
+                        + (laneWidth - carWidth) / 2f;
+
+        float playerY =
+                screenHeight - carHeight - 80f;
+
+        playerCar = new RectF(
+                playerX,
+                playerY,
+                playerX + carWidth,
+                playerY + carHeight
+        );
+
+        // Road stripes
+        stripeYPositions.clear();
+
+        float stripeSpacing = screenHeight / 6f;
+
+        for (int i = 0; i < 6; i++) {
+            stripeYPositions.add(i * stripeSpacing);
+        }
+
+        // Remove previous enemies
+        enemyCars.clear();
+        enemyLanes.clear();
+
+        // Reset game
+        score = 0;
+        gameSpeed = 12f;
+        stripeSpeed = 12f;
+        spawnInterval = 1400L;
+
+        gameOver = false;
+
+        lastSpawnTime = System.currentTimeMillis();
+    }
+
+    // ============================================================
+    // Update game
+    // ============================================================
+
+    public void update() {
+
+        if (gameOver || playerCar == null) {
+            return;
+        }
+
+        // --------------------------------------------------------
+        // Move road stripes
+        // --------------------------------------------------------
+
+        for (int i = 0; i < stripeYPositions.size(); i++) {
+
+            float y =
+                    stripeYPositions.get(i)
+                            + stripeSpeed;
+
+            if (y > screenHeight) {
+                y -= screenHeight;
+            }
+
+            stripeYPositions.set(i, y);
+        }
+
+        // --------------------------------------------------------
+        // Spawn enemies
+        // --------------------------------------------------------
+
+        long now = System.currentTimeMillis();
+
+        if (now - lastSpawnTime > spawnInterval) {
+
+            spawnEnemy();
+
+            lastSpawnTime = now;
+
+            // Increase difficulty
+            if (spawnInterval > 500) {
+                spawnInterval -= 15;
+            }
+        }
+
+        // --------------------------------------------------------
+        // Move enemies
+        // --------------------------------------------------------
+
+        for (int i = enemyCars.size() - 1; i >= 0; i--) {
+
+            RectF enemy = enemyCars.get(i);
+
+            enemy.top += gameSpeed;
+            enemy.bottom += gameSpeed;
+
+            // Enemy passed player
+            if (enemy.top > screenHeight) {
+
+                enemyCars.remove(i);
+                enemyLanes.remove(i);
+
+                score++;
+
+                if (gameSpeed < 30f) {
+                    gameSpeed += 0.15f;
+                }
+
+            } else if (RectF.intersects(enemy, playerCar)) {
+
+                gameOver = true;
+            }
+        }
+    }
+
+    // ============================================================
+    // Spawn enemy car
+    // ============================================================
+
+    private void spawnEnemy() {
+
+        int lane = random.nextInt(LANE_COUNT);
+
+        float enemyX =
+                roadLeft
+                        + lane * laneWidth
+                        + (laneWidth - carWidth) / 2f;
+
+        float enemyY = -carHeight - 20f;
+
+        RectF enemy = new RectF(
+                enemyX,
+                enemyY,
+                enemyX + carWidth,
+                enemyY + carHeight
+        );
+
+        enemyCars.add(enemy);
+        enemyLanes.add(lane);
+    }
+
+    // ============================================================
+    // Draw
+    // ============================================================
+
+    @Override
+    public void draw(Canvas canvas) {
+
+        super.draw(canvas);
+
+        if (canvas == null) {
+            return;
+        }
+
+        // --------------------------------------------------------
+        // Grass
+        // --------------------------------------------------------
+
+        canvas.drawColor(
+                Color.rgb(34, 139, 34)
+        );
+
+        // --------------------------------------------------------
+        // Road
+        // --------------------------------------------------------
+
+        paint.setStyle(Paint.Style.FILL);
+        paint.setColor(Color.DKGRAY);
+
+        canvas.drawRect(
+                roadLeft,
+                0,
+                roadRight,
+                screenHeight,
+                paint
+        );
+
+        // --------------------------------------------------------
+        // Lane stripes
+        // --------------------------------------------------------
+
+        paint.setColor(Color.WHITE);
+        paint.setStrokeWidth(8f);
+
+        for (int lane = 1; lane < LANE_COUNT; lane++) {
+
+            float x =
+                    roadLeft + laneWidth * lane;
+
+            for (float y : stripeYPositions) {
+
+                canvas.drawLine(
+                        x,
+                        y,
+                        x,
+                        y + screenHeight / 20f,
+                        paint
+                );
+            }
+        }
+
+        // --------------------------------------------------------
+        // Road edges
+        // --------------------------------------------------------
+
+        paint.setColor(Color.YELLOW);
+
+        canvas.drawRect(
+                roadLeft - 6f,
+                0,
+                roadLeft,
+                screenHeight,
+                paint
+        );
+
+        canvas.drawRect(
+                roadRight,
+                0,
+                roadRight + 6f,
+                screenHeight,
+                paint
+        );
+
+        // --------------------------------------------------------
+        // Player car
+        // --------------------------------------------------------
+
+        if (playerCar != null) {
+
+            paint.setColor(Color.RED);
+
+            canvas.drawRoundRect(
+                    playerCar,
+                    16f,
+                    16f,
+                    paint
+            );
+
+            // Windshield
+            paint.setColor(
+                    Color.rgb(150, 220, 255)
+            );
+
+            canvas.drawRect(
+                    playerCar.left + carWidth * 0.15f,
+                    playerCar.top + carHeight * 0.15f,
+                    playerCar.right - carWidth * 0.15f,
+                    playerCar.top + carHeight * 0.40f,
+                    paint
+            );
+        }
+
+        // --------------------------------------------------------
+        // Enemy cars
+        // --------------------------------------------------------
+
+        paint.setColor(Color.BLUE);
+
+        for (RectF enemy : enemyCars) {
+
+            canvas.drawRoundRect(
+                    enemy,
+                    16f,
+                    16f,
+                    paint
+            );
+        }
+
+        // --------------------------------------------------------
+        // Score
+        // --------------------------------------------------------
+
+        paint.setColor(Color.WHITE);
+        paint.setTextSize(60f);
+        paint.setTextAlign(Paint.Align.LEFT);
+
+        canvas.drawText(
+                "Score: " + score,
+                40f,
+                90f,
+                paint
+        );
+
+        // --------------------------------------------------------
+        // Game Over
+        // --------------------------------------------------------
+
+        if (gameOver) {
+
+            paint.setColor(
+                    Color.argb(180, 0, 0, 0)
+            );
+
+            canvas.drawRect(
+                    0,
+                    0,
+                    screenWidth,
+                    screenHeight,
+                    paint
+            );
+
+            paint.setColor(Color.WHITE);
+
+            paint.setTextAlign(
+                    Paint.Align.CENTER
+            );
+
+            paint.setTextSize(90f);
+
+            canvas.drawText(
+                    "GAME OVER",
+                    screenWidth / 2f,
+                    screenHeight / 2f - 40f,
+                    paint
+            );
+
+            paint.setTextSize(50f);
+
+            canvas.drawText(
+                    "Score: " + score,
+                    screenWidth / 2f,
+                    screenHeight / 2f + 40f,
+                    paint
+            );
+
+            canvas.drawText(
+                    "Tap to Restart",
+                    screenWidth / 2f,
+                    screenHeight / 2f + 120f,
+                    paint
+            );
+
+            paint.setTextAlign(
+                    Paint.Align.LEFT
+            );
+        }
+    }
+
+    // ============================================================
+    // Touch controls
+    // ============================================================
+
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+
+        switch (event.getActionMasked()) {
+
+            case MotionEvent.ACTION_DOWN:
+
+                touchStartX = event.getX();
+
+                return true;
+
+            case MotionEvent.ACTION_UP:
+
+                float touchEndX = event.getX();
+
+                if (gameOver) {
+
+                    restartGame();
+
+                    return true;
+                }
+
+                float deltaX =
+                        touchEndX - touchStartX;
+
+                // Swipe left
+                if (deltaX < -50f) {
+
+                    movePlayerLeft();
+
+                }
+                // Swipe right
+                else if (deltaX > 50f) {
+
+                    movePlayerRight();
+                }
+
+                return true;
+        }
+
+        return true;
+    }
+
+    // ============================================================
+    // Player movement
+    // ============================================================
+
+    private void movePlayerLeft() {
+
+        if (playerLane > 0) {
+            playerLane--;
+            updatePlayerPosition();
+        }
+    }
+
+    private void movePlayerRight() {
+
+        if (playerLane < LANE_COUNT - 1) {
+            playerLane++;
+            updatePlayerPosition();
+        }
+    }
+
+    private void updatePlayerPosition() {
+
+        if (playerCar == null) {
+            return;
+        }
+
+        float x =
+                roadLeft
+                        + playerLane * laneWidth
+                        + (laneWidth - carWidth) / 2f;
+
+        playerCar.left = x;
+        playerCar.right = x + carWidth;
+    }
+
+    // ============================================================
+    // Restart
+    // ============================================================
+
+    private void restartGame() {
+
+        initGameObjects();
+    }
+
+    // ============================================================
+    // Thread control
+    // ============================================================
+
+    public void resume() {
+
+        if (gameThread != null) {
+            gameThread.setRunning(true);
+
+            if (!gameThread.isAlive()) {
+                gameThread.start();
+            }
+        }
+    }
+
+    public void pause() {
+
+        if (gameThread != null) {
+            gameThread.setRunning(false);
+        }
+    }
+
+    // ============================================================
+    // Getters / Setters
+    // ============================================================
+
+    public int getScore() {
+        return score;
+    }
+
+    public void setScore(int score) {
+        this.score = Math.max(0, score);
+    }
+
+    public float getGameSpeed() {
+        return gameSpeed;
+    }
+
+    public void setGameSpeed(float gameSpeed) {
+        this.gameSpeed = Math.max(1f, gameSpeed);
+    }
+
+    public ArrayList<Integer> getPlayerCar( ArrayList<Integer>) {
+        return playerCar;
+    }
+
+    public boolean isGameOver() {
+        return gameOver;
+    }
+
+    public void setGameOver(boolean gameOver) {
+        this.gameOver = gameOver;
+    }
+
+    public long getSpawnInterval() {
+        return spawnInterval;
+    }
+
+    public void setSpawnInterval(long spawnInterval) {
+        this.spawnInterval =
+                Math.max(100L, spawnInterval);
+    }
+
+    public float getStripeSpeed() {
+        return stripeSpeed;
+    }
+
+    public void setStripeSpeed(float stripeSpeed) {
+        this.stripeSpeed =
+                Math.max(1f, stripeSpeed);
+    }
+}
+
