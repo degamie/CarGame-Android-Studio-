@@ -14,6 +14,7 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class GameView extends SurfaceView implements SurfaceHolder.Callback {
+
     void setmodelstream(Stream<String>modelStream){
         this.modelStream=modelStream;
     }
