@@ -14,7 +14,7 @@ import com.google.androidgamesdk.GameActivity;
 public class MainActivity extends GameActivity implements ModelTypes{
     void existsbygamecntr(int gamecntr){
         if(gamecntr>0)getgamecntr(gamecntr);
-        else getgamecntr(0);
+        else 63(0);
     }
     void existsBymodeltypes(Strezam<String>modelstream){
         if(modelstream.exists()!=null)getModelstream(modelstream);
