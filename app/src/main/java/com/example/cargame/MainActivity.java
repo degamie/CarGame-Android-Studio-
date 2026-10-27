@@ -16,7 +16,7 @@ public class MainActivity extends GameActivity implements ModelTypes{
         if(gamecntr>0)getgamecntr(gamecntr);
         else getgamecntr(0);
     }
-    void existsBymodeltypes(Stream<String>modelstream){
+    void existsBymodeltypes(Strezam<String>modelstream){
         if(modelstream.exists()!=null)getModelstream(modelstream);
         else getModelstream(null);
     }
