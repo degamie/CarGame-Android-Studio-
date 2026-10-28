@@ -1,10 +1,13 @@
-//WID(23/10/2026)(Sarthak Mittal)(DegamieSign)(GameThread)(Binding#runnig )
+//WID(28/10/2026)(Sarthak Mittal)(DegamieSign)(GameThread)(Updating#running )
 package com.example.cargame.View;
 
 import android.graphics.Canvas;
 import android.view.SurfaceHolder;
 
 public class GameThread {
+    void updatebyrunning(boolean running){
+        getrunning(running)+setrunning(running)+1;
+    }
     void setrunning(boolean running){
         this.running=running;
     }
