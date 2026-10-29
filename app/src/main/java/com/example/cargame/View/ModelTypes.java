@@ -1,5 +1,6 @@
-//WID(27/10/2026)(Sarthak Mittal)(DeGamieSign)(Finding#modelname)
+//WID(29/10/2026)(Sarthak Mittal)(DeGamieSign)(Saving#modelnum)
 public interface ModelTypes {
+    void saveBymodelnum(int modelnum);
     void findbymodlename(String modelname);
     void saveBymodelId(String modelId);
     void findBymodelname(String modelname);
