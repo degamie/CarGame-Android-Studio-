@@ -1,4 +1,4 @@
-//WID(29/10/2026)(Sarthak Mittal(DegamieSign)(GameView)(Updating#modellenght)
+//WID(30/10/2026)(Sarthak Mittal(DegamieSign)(GameView)(Checking#modellenght)
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -15,6 +15,10 @@ import java.util.Random;
 
 public class GameView extends SurfaceView implements SurfaceHolder.Callback {
     int mdllen=modelStream.size();
+    void existsbymdllen(int mdllen){
+        if(mdllen!=0)getmdllen(mdllen);
+        else getmdllen(0);
+    }
     void updatebymdllen(int mdllen){
         getmdllen(mdllen)+setMdllen(mdllen)+1;
     }
