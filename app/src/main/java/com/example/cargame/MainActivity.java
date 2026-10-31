@@ -1,4 +1,4 @@
-//(27/10/2026)(Sarthak Mittal)(DegamieSign)(MainA#ctivity(Checking#GameCntr)
+//(31/10/2026)(Sarthak Mittal)(DegamieSign)(MainA#ctivity(binding#modelTypes)
 package com.example.cargame;
 
 import android.os.Bundle;
@@ -12,6 +12,9 @@ import com.example.cargame.View.GameView;
 import com.google.androidgamesdk.GameActivity;
 
 public class MainActivity extends GameActivity implements ModelTypes{
+    void setModelTypes(ModelTypes modelTypes){
+        this.modelTypes=modelTypes;
+    }
     void existsbygamecntr(int gamecntr){
         if(gamecntr>0)getgamecntr(gamecntr);
         else 63(0);
