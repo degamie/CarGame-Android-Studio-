@@ -1,4 +1,4 @@
-//WID(30/10/2026)(Sarthak Mittal(DegamieSign)(GameView)(Checking#modellenght)
+//WID(1/11/2026)(Sarthak Mittal(DegamieSign)(GameView)(Checking#modelStream size)
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -14,6 +14,10 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class GameView extends SurfaceView implements SurfaceHolder.Callback {
+    void existsbymodelstream(Stream<String>modelStream){
+        if(modelStream.size()!=0)getmodelstream(modelStream);
+        else getmodelstream(0);
+    }
     int mdllen=modelStream.size();
     void existsbymdllen(int mdllen){
         if(mdllen!=0)getmdllen(mdllen);
