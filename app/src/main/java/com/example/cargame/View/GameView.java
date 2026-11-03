@@ -14,6 +14,7 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class GameView extends SurfaceView implements SurfaceHolder.Callback {
+
     void existsbymodelstream(Stream<String>modelStream){
         if(modelStream.size()!=0)getmodelstream(modelStream);
         else getmodelstream(0);
