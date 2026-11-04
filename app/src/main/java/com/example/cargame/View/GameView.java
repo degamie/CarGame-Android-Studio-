@@ -14,6 +14,20 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class GameView extends SurfaceView implements SurfaceHolder.Callback {
+    Logger logger;
+
+    void handlemodelstream(Stream<String>modelStream){
+        try {
+            logger.info("Player Model Stream is handling");
+        }
+        catch(Exception e){
+            e.printStackTrace();
+        }
+        finally {
+            System.out.println("Player Model Stream has been handled");
+        }
+
+    }
 
     int getMdllen(int mdllen){
         return mdllen;
