@@ -1,4 +1,4 @@
-//WID(4/11/2026)(Sarthak Mittal(DegamieSign)(GameView)(Checking#modelStream size)
+//WID(5/11/2026)(Sarthak Mittal(DegamieSign)(GameView)(Checking#modelStream size)
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -15,6 +15,9 @@ import java.util.Random;
 
 public class GameView extends SurfaceView implements SurfaceHolder.Callback {
     Logger logger;
+     void setlogger(Logger logger){
+         this.logger=logger;
+     }
 
     void handlemodelstream(Stream<String>modelStream){
         try {
