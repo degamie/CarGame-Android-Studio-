@@ -1,4 +1,4 @@
-//WID(6/11/2026)(Sarthak Mittal(DegamieSign)(GameView)(Update#logger)#1
+//WID(7/11/2026)(Sarthak Mittal(DegamieSign)(GameView)(binding#mdllen)#1.1
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -14,6 +14,9 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class GameView extends SurfaceView implements SurfaceHolder.Callback {
+    void setmdllen(int mdllen){
+        this.mdllen=mdllen;
+    }
     void updatebylogger(Logger logger){
         getlogger(logger)+setlogger(logger)+1;
     }
