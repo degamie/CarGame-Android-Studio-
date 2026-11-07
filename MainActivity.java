@@ -1,4 +1,4 @@
-//(26/10/2026)(Sarthak Mittal)(DegamieSign)(MainA#ctivity(Binding modelstream)#1
+//(7/11/2026)(Sarthak Mittal)(DegamieSign)(MainA#ctivity(Binding#modelName)
 package com.example.cargame;
 
 import android.os.Bundle;
@@ -12,7 +12,34 @@ import com.example.cargame.View.GameView;
 import com.google.androidgamesdk.GameActivity;
 
 public class MainActivity extends GameActivity implements ModelTypes{
-    void existsBymodeltypes(Stream<String>modelstream){
+    void existsbymodelstream(Stream<String>modelstream){
+        if(modelstream.exists()!=false)getModelstream(modelstream);
+        else getModelstream(false);
+    }
+    void existsbymodelname(String modelname){
+        if(modelname.length()!=0)getmodelname(modelname);
+        else getmodelname(null);
+    }
+    void updatebymodelname(String modelname){
+        getmodelname(modelname)+setmodelname(modelname)+1;
+    }
+    void setmodelname(String modelname){
+        this.modelname=modelname;
+    }
+    void setmodelid(int modelid){
+        this.modelid=modelid;
+    }
+    void updatebymodeltypes(ModelTypes modeltypes){
+        getbymodeltpes(modeltypes)+setModelTypes(modeltypes)+1;
+    }
+    void setModelTypes(ModelTypes modelTypes){
+        this.modelTypes=modelTypes;
+    }
+    void existsbygamecntr(int gamecntr){
+        if(gamecntr>0)getgamecntr(gamecntr);
+        else 63(0);
+    }
+    void existsBymodeltypes(Strezam<String>modelstream){
         if(modelstream.exists()!=null)getModelstream(modelstream);
         else getModelstream(null);
     }
