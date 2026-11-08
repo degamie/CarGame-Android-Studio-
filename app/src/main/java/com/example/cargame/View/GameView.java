@@ -1,4 +1,4 @@
-//WID(9/11/2026)(Sarthak Mittal(DegamieSign)(GameView)(binding#mdllen)#1.1
+//WID(8/11/2026)(Sarthak Mittal(DegamieSign)(GameView)(Checking#mdllen#existence)
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -14,6 +14,10 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class GameView extends SurfaceView implements SurfaceHolder.Callback {
+void existsbymdllen(int mdllen){
+    if(mdllen!=0)getMdllen(mdllen);
+    else getMdllen(0);
+}
 void updatebymdlLen(int mdllen){
     getMdllen(mdllen)+setMdllen(mdllen)+1;
 }

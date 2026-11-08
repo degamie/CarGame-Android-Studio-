@@ -7,6 +7,7 @@ import android.view.Window;
 import com.example.cargame.MainActivity;
 
 public class Rectf extends MainActivity {
+
     void turnonbluetooth(BleManager){
         if(bleManager.switchonn()==true)getBleManager(bleManager);
         else getBleManager(false);
