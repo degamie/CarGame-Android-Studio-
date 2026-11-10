@@ -1,4 +1,4 @@
-//WID(10/11/2026)(Sarthak Mittal(DegamieSign)(GameView)(Checking#mdllen#existence)#1
+//WID(10/11/2026)(Sarthak Mittal(DegamieSign)(GameView)(Checking#mdllen#existence)#1.1
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -14,9 +14,11 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class GameView extends SurfaceView implements SurfaceHolder.Callback {
+    int carnamelen=carName.length();
+
     String carName;
 
-    int carnamelen=carName.length();
+
     void existsbycarname(String carName){
         if(carName.length()!=0)getcarname(carName);
         else getcarname(null);
