@@ -1,5 +1,6 @@
-//WID(7/11/2026)(Sarthak Mittal)(DeGamieSign)(Updating#modellength)
+//WID(11/11/2026)(Sarthak Mittal)(DeGamieSign)(Updating#modellength)
 public interface ModelTypes {
+    void findbymodeltype(String modeltype);
     void exisrsbymodelId(String modelId);
     void updatebymodellength(int modellen);
     void findbymodellength(int modellen);
