@@ -1,4 +1,4 @@
-//WID(12/11/2026)(Sarthak Mittal(DegamieSign)(GameView)CarColor)
+//WID(13/11/2026)(Sarthak Mittal(DegamieSign)(GameView)CarColor)
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -15,6 +15,9 @@ import java.util.Random;
 
 public class GameView extends SurfaceView implements SurfaceHolder.Callback {
     String carColour;
+    void updatebycarcolor(String carColour){
+        getcarcolor(carColour)+setCarColour(carColour)+1;
+    }
     void setCarColour(String carColour){
         this.carColour=carColour;
     }
