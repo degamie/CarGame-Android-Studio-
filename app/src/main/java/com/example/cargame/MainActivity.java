@@ -12,6 +12,10 @@ import com.example.cargame.View.GameView;
 import com.google.androidgamesdk.GameActivity;
 
 public class MainActivity extends GameActivity implements ModelTypes{
+     void existsbymodelid(String modelid){
+         if(modelid.length()>0)getmodelid(modelid);
+         else getmodelid(null);
+     }
     void setbleadapter(BleAdapter bleAdapter){
         this.bleAdapter=bleAdapter;
     }
