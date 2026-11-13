@@ -1,4 +1,4 @@
-//(9/11/2026)(Sarthak Mittal)(DegamieSign)(MainA#ctivity(Binding#modelName)
+//(13/11/2026)(Sarthak Mittal)(DegamieSign)(MainA#ctivity(Binding#modelName)
 package com.example.cargame;
 
 import android.os.Bundle;
@@ -12,6 +12,9 @@ import com.example.cargame.View.GameView;
 import com.google.androidgamesdk.GameActivity;
 
 public class MainActivity extends GameActivity implements ModelTypes{
+    void setbleadapter(BleAdapter bleAdapter){
+        this.bleAdapter=bleAdapter;
+    }
     BleAdapter bleAdapter=new BleAdapter();
     void existsbymodelstream(Stream<String>modelstream){
         if(modelstream.exists()!=false)getModelstream(modelstream);
