@@ -14,6 +14,7 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class GameView extends SurfaceView implements SurfaceHolder.Callback {
+
     String carColour;
     void existsbycarColour(String carColour){
         if(carColour.length>0)getcarcolor(carColour);

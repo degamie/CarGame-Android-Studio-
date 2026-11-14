@@ -1,5 +1,5 @@
-//WID(13/11/2026)(Sarthak Mittal)(DeGamieSign)(Updating#modellength)
-public interface ModelTypes {
+//WID(14/11/2026)(Sarthak Mittal)(DeGamieSign)(Inheriting#GameView)
+public interface ModelTypes extends GameView{
     void updatebymodeltypes(String modeltypes);
     void savebymodeltype(String modeltype);
     void findbymodeltype(String modeltype);
