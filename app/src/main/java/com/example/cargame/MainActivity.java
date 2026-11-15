@@ -1,4 +1,4 @@
-//(15/11/2026)(Sarthak Mittal)(DegamieSign)(MainA#ctivity(Binding#modelName)
+//(15/11/2026)(Sarthak Mittal)(DegamieSign)(MainA#ctivity(Fetching#modelName)
 package com.example.cargame;
 
 import android.os.Bundle;
@@ -12,6 +12,9 @@ import com.example.cargame.View.GameView;
 import com.google.androidgamesdk.GameActivity;
 
 public class MainActivity extends GameActivity implements ModelTypes{
+    String getModelname(String modelname){
+        return modelname;
+    }
     String modelname=modelTypes.findbymodelid();
      void existsbymodelid(String modelid){
          if(modelid.length()>0)getmodelid(modelid);
