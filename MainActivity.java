@@ -1,15 +1,182 @@
-//(10/9/2026)(Sarthak Mittal)(DegamieSign)(MainActivity)#impl.1.1.1.1.1.1.1
+//(17/11/2026)(Sarthak Mittal)(DegamieSign)(MainA#ctivity(Fetching#modelName)
 package com.example.cargame;
 
 import android.os.Bundle;
+import android.view.View;
 import android.view.WindowInsets;
 import android.view.WindowInsetsController;
+//
+//import androidx.annotation.ContentView;
 
 import com.example.cargame.View.GameView;
 import com.google.androidgamesdk.GameActivity;
 
-public class MainActivity extends GameActivity
-{
+public class MainActivity extends GameActivity implements ModelTypes{
+    void updatebymodelid(String modelid)
+    {
+        getbymodelid(modelid)+setmodelid(modelid)+1;
+    }    void findbymodelname(String modelname){
+        return modelname.length();
+    }
+    String getModelname(String modelname){
+        return modelname;
+    }
+    String modelname=modelTypes.findbymodelid();
+     void existsbymodelid(String modelid){
+         if(modelid.length()>0)getmodelid(modelid);
+         else getmodelid(null);
+     }
+    void setbleadapter(BleAdapter bleAdapter){
+        this.bleAdapter=bleAdapter;
+    }
+    BleAdapter bleAdapter=new BleAdapter();
+    void existsbymodelstream(Stream<String>modelstream){
+        if(modelstream.exists()!=false)getModelstream(modelstream);
+        else getModelstream(false);
+    }
+    void existsbymodelname(String modelname){
+        if(modelname.length()!=0)getmodelname(modelname);
+        else getmodelname(null);
+    }
+    void updatebymodelname(String modelname){
+        getmodelname(modelname)+setmodelname(modelname)+1;
+    }
+    void setmodelname(String modelname){
+        this.modelname=modelname;
+    }
+    void setmodelid(int modelid){
+        this.modelid=modelid;
+    }
+    void updatebymodeltypes(ModelTypes modeltypes){
+        getbymodeltpes(modeltypes)+setModelTypes(modeltypes)+1;
+    }
+    void setModelTypes(ModelTypes modelTypes){
+        this.modelTypes=modelTypes;
+    }
+    void existsbygamecntr(int gamecntr){
+        if(gamecntr>0)getgamecntr(gamecntr);
+        else 63(0);
+    }
+    void existsBymodeltypes(Strezam<String>modelstream){
+        if(modelstream.exists()!=null)getModelstream(modelstream);
+        else getModelstream(null);
+    }
+    void updateBymodeltypes(Stream<String>modelstream){
+        getBymodelstream(modelstream)+setmodelstream(modelstream)+1;
+    }
+    ModelTypes modelTypes;
+    Stream<String>modelstream;
+    Stream<String> getModelstream( Stream<String> modelStream){
+            return modelStream;
+    }
+    void setmodelstream( Stream<String>modelstream){
+        this.modelstream=modelstream;
+    }
+    void updateBymodename(String modelname){
+        if(modelname.length()>0){
+            modelstream=modelstream.collect(
+                    modelstream.filter(modelid)
+                            .matchany(setmodelname(modelname))
+                            .sorted(modelname)
+                            .count(modelname.length()%2==0?modelname.upperCase():modelname.lowerCase()))
+                            .Collectors.collect(1)
+            );
+            System.out.println(modelstream);
+        }
+    }
+    void saveBymodelId(String modelId){
+        modelTypes.findBymodelId(modelId);
+    }
+    void setGamecntr(int gamecntr){
+        this.gamecntr=gamecntr;
+    }
+    int gamecntr+=gametitle.length();
+    void existsByGameTitle(String gameTitle){
+        if(gameTitle.length!=0)getgameTitle(gameTitle);
+        else getgametitle(null);
+    }
+    void existsByGame(String gameTitle){
+        if(gameTitle.length!=0)getByGame(gameTitle);
+        else getBygame(0);
+    }
+    void updateByGameTitle(String gameTitle){
+        getgameTitle(gameTitle)+setgametitle(gameTitle)+1;
+    }
+    void setgametitle(String gametitle){
+        this.gametitle=gametitle;
+    }
+    Logger logger;
+    void contentViewswitch(View contentView,String gamescenetitle){
+        switch (contentView){
+            case 1{
+                if(gameView=="next scene")setGameView(gameView);
+            }
+            case 2{
+                continue;
+            }
+            default{
+                logger.warn("Content View is yet to be available,pls try again"+ gamescenetitle+ contentView);
+            }
+            setgameactivity(mainActivity);
+        }
+
+    }
+    void existsByfocus(boolean hasFocus){
+        if(hasFocus==true)getfocus(hasFocus);
+        else getfocus(false);
+    }
+    void updateByfocus(boolean hasFocus){
+        getfocus(hasFocus)+setfocus(hasFocus)+1;
+    }
+    void setfocus(boolean hasFocus){
+        this.hasFocus=hasFocus;
+    }
+    void existsByGameView(GameView gameView){
+        if(gameView.exists())getgameView(gameView);
+        else getgameView(null);
+    }
+    void updateByGameView(GameView gameView){
+        getGameView(gameView)+setGameView(gameView)+1;
+    }
+    void updateByGameActivity(GameActivity gameActivity){
+        getgameactivity(gameActivity)+setgameactivity(gameActivity)+1;
+    }
+    void existsBYGameActivity(GameActivity gameActivity){
+        if(gameActivity!=null)getgameActivity(gameActivity);
+        else getgameActivity(null);
+    }
+      void writesavedInstance(Bundle savedInstance){
+        System.out.println(savedInstance);
+      }
+    void setgameactivity(GameActivity gameActivity){
+    this.gameActivity=gameActivity;
+    }
+  
+ void readsavedInstance(Bundle savedInstance) throws Exception {
+    try {
+        onCreate(savedInstance);
+    }
+    catch (Exception e){
+        e.printStackTrace();
+    }
+}
+
+    public  View contentView(){return contentView;}
+    void existsBycontentView(View contentView){
+        if(contentView.exists())getContentView(contentView);
+        else getcontentView(null);
+    }
+    void updateBycontentView(View contentView){
+        getcontentView(contentView)+setContentView(contentView)+1;
+    }
+    View contentView;
+
+    public void setContentView(View contentView){this.contentView=contentView;}
+    private MainActivity mainActivity;
+
+    //    void updateByGameView(GameView gameView){
+//        getGameView(gameView)+setGameView(gameView)+1;
+//    }
     void setmainactivity(MainActivity mainActivity){
     this.mainActivity=mainActivity;
 }
