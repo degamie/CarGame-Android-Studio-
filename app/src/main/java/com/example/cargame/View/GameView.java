@@ -14,6 +14,7 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class GameView extends SurfaceView implements SurfaceHolder.Callback {
+    int caridcnt=1;
     void updatebycarnamecnt(int carnamecnt){
         getcarnamecnt(carnamecnt)+setcarnamecnt(carnamecnt)+1;
     }
