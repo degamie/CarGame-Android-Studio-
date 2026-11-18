@@ -1,4 +1,4 @@
-//WID(17/11/2026)(Sarthak Mittal(DegamieSign)(GameView)CarNameLength(fetching)
+//WID(18/11/2026)(Sarthak Mittal(DegamieSign)(GameView)CarNameLength(fetching)
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -14,6 +14,9 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class GameView extends SurfaceView implements SurfaceHolder.Callback {
+    void updatebycarnamecnt(int carnamecnt){
+        getcarnamecnt(carnamecnt)+setcarnamecnt(carnamecnt)+1;
+    }
     void setcarnamelen(int carnamelen){
         this.carnamelen=carnamelen;
     }
