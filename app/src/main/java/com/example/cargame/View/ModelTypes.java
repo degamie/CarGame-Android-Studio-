@@ -3,7 +3,7 @@ public interface ModelTypes extends GameView{
     void existsbymodelnum(int modelnum);
     void updatebymodelnum(int modelnum);
     void existsbymodeltypes(String modeltypes);
-    void updatebymodeltypes(String modeltypes);
+    void updatebymodeltypes(String modeltypes);p-=
     void savebymodeltype(String modeltype);
     void findbymodeltype(String modeltype);
     void exisrsbymodelId(String modelId);
