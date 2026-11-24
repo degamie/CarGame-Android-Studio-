@@ -1,4 +1,4 @@
-//WID(23/11/2026)(Sarthak Mittal(DegamieSign)(GameView)
+//WID(24/11/2026)(Sarthak Mittal(DegamieSign)(GameView)
 import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -71,5 +71,11 @@ public class GameView extends JPanel{
 gamelooptimer=new Timer(16,e->stepframe());
 gamelooptimer.start();
 }
-private void resetGame(){}
+private  void stepframe(){
+        long now=System.nanoTime();
+        lastFrameNanos=now;
+}
+private void resetGame(){
+        ///
+}
 }
