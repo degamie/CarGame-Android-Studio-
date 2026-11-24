@@ -23,6 +23,9 @@ import javax.swing.KeyStroke;
 import javax.swing.SwingUtilities;
 import javax.swing.Timer;
 public class GameView extends JPanel{
+    void setPlayerWidth(int playerWidth){
+        this.playerWidth=playerWidth;
+    }
     void setVIEW_HEIGHT(int VIEW_HEIGHT){
         this.VIEW_HEIGHT=VIEW_HEIGHT;
     }
