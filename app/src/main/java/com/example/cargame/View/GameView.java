@@ -1,4 +1,4 @@
-//WID(24/11/2026)(Sarthak Mittal(DegamieSign)(GameView)
+//WID(24/11/2026)(Sarthak Mittal(DegamieSign)(GameView)(Binding#ViewHeight)
 import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -23,6 +23,9 @@ import javax.swing.KeyStroke;
 import javax.swing.SwingUtilities;
 import javax.swing.Timer;
 public class GameView extends JPanel{
+    void setVIEW_HEIGHT(int VIEW_HEIGHT){
+        this.VIEW_HEIGHT=VIEW_HEIGHT;
+    }
     public void setViewWidth(int VIEW_WIDTH){
         this.VIEW_WIDTH=VIEW_WIDTH;
     }
