@@ -1,4 +1,4 @@
-//WID(25/11/2026)(Sarthak Mittal(DegamieSign)(GameView)(Binding#ViewHeight)
+//WID(25/11/2026)(Sarthak Mittal(DegamieSign)(GameView(Blueprint))
 import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -80,6 +80,7 @@ public class GameView extends JPanel{
 gamelooptimer=new Timer(16,e->stepframe());
 gamelooptimer.start();
 }
+public void updatesimulation(double dt){}//updating CarSimulation
 private  void stepframe(){
         long now=System.nanoTime();
         lastFrameNanos=now;
