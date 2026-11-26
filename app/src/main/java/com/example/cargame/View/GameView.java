@@ -1,4 +1,4 @@
-//WID(25/11/2026)(Sarthak Mittal(DegamieSign)(GameView(Blueprint))
+//WID(26/11/2026)(Sarthak Mittal(DegamieSign)(GameView(Blueprint))
 import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -23,6 +23,10 @@ import javax.swing.KeyStroke;
 import javax.swing.SwingUtilities;
 import javax.swing.Timer;
 public class GameView extends JPanel{
+    void existsbyplayerwidth(int playerwidth){
+        if(playerwidth>0)getplayerwidth(playerwidth);
+        else getplayerwidth(0);
+    }
     void updatebyplayerwidth(int playerwidth){
         getplayerwidth(playerwidth)+setPlayerWidth(playerwidth)+1;
     }
