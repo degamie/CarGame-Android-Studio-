@@ -1,4 +1,4 @@
-//WID(26/11/2026)(Sarthak Mittal)(DegamieSign)(Rectf(turnonbluetooth)#Impl.
+//WID(27/11/2026)(Sarthak Mittal)(DegamieSign)(Rectf(turnonbluetooth)#Impl.
 
 import android.app.GameManager;
 import android.graphics.RectF;
@@ -7,6 +7,9 @@ import android.view.Window;
 import com.example.cargame.MainActivity;
 
 public class Rectf extends MainActivity {
+    void setmainactivity(MainActivity mainActivity){
+        this.mainActivity=mainActivity;
+    }
 GameView gameView;
 void setGameView(GameView gameView){
     this.gameView=gameView;
